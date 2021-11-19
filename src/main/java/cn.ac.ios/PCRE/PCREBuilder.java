@@ -160,6 +160,15 @@ public final class PCREBuilder {
             return getStarCount(tree.getChild(0));
         }
 
+        public int[] getNestAndStar() {
+            PCREParser parser = new Parser(input).build();
+            ParseTree tree = parser.parse();
+            int[] ints = new int[2];
+            ints[0] = getCount(tree.getChild(0));
+            ints[1] = getStarCount(tree.getChild(0));
+            return ints;
+        }
+
         public int getCount(ParseTree tree) {
             if (tree.getChildCount() == 0) {
                 return 0;

@@ -65,8 +65,11 @@ for item in data:
     # files.add(filename)
     # pro = filename.replace("D:/pqc/npm/extract/", "").split("/")[1]
     # pros.add(pro)
+    re.ASCII
 with open('../../data/js/js.clear.dy.json', 'w') as f:
     json.dump(data, f, indent=" ")
+
+    re.search("\\d+","123sdfsdvd")
 
 # re.fullmatch("[\n]*")
 print(len(pros))
@@ -74,13 +77,13 @@ print(len(files))
 print(len(res))
 print(len(set(res)))
 
-# import numpy as np
-#
-# # 均值
-# print(np.mean(ress))
-# # 最大值
-# print(np.max(ress))
-# # 中位数
-# print(np.median(ress))
-# # 返回众数
-# print(np.argmax(np.bincount(ress)))
+import numpy as np
+
+# 均值
+print(np.mean(ress))
+# 最大值
+print(np.max(ress))
+# 中位数
+print(np.median(ress))
+# 返回众数
+print(np.argmax(np.bincount(ress)))

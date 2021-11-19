@@ -1,25 +1,58 @@
+import json
 import re
 
-file = "/Users/pqc/idea/regex_analyse/data/java/maven.json"
-# lines = open(file,encoding="utf-8").readlines()
-f = open("/Users/pqc/idea/regex_analyse/data/java/pro.txt", encoding="utf-8")
-ff = set()
-for line in f.readlines():
-    ff.add(line.strip("\n")[0:-4])
-print(len(ff))
+file = "../../data/python/python.clear.multiline.json"
+file2 = "../../data/python/nest_python.txt"
+file3 = "../../data/python/star_height_python.txt"
 
-f = open("/Users/pqc/idea/regex_analyse/data/java/file.txt", encoding="utf-8")
-
+data = json.loads(open(file, encoding="utf-8").read())
+files = set()
 pros = set()
-lines = f.readlines()
-for line in lines:
-    strs = line.strip("\n").replace("D:/pqc/maven/2021-1-20/maven-file/", "").split("/")
-    ss = 'D:/pqc/maven/2021-1-20/maven-file'
-    print(line)
-    for s in strs:
-        ss = ss + "/" + s
-        if ss in ff:
-            pros.add(ss)
-            break
+res = list()
+i = 0
+max = 0
+m = dict()
+for item in data:
+    newregex = list()
+    for regex in item["regexps"]:
+        pattern = regex["pattern"]
+        res.append(len(pattern))
 
-print(len(pros))
+import numpy as np
+
+# 均值
+print(np.mean(res))
+# 最大值
+print(np.max(res))
+# 中位数
+print(np.median(res))
+# 返回众数
+print(np.argmax(np.bincount(res)))
+
+lines = open(file2, encoding="utf-8").readlines()
+res.clear()
+for line in lines:
+    res.append(int(line.strip("\n")))
+
+# 均值
+print(np.mean(res))
+# 最大值
+print(np.max(res))
+# 中位数
+print(np.median(res))
+# 返回众数
+print(np.argmax(np.bincount(res)))
+
+lines = open(file3, encoding="utf-8").readlines()
+res.clear()
+for line in lines:
+    res.append(int(line.strip("\n")))
+
+# 均值
+print(np.mean(res))
+# 最大值
+print(np.max(res))
+# 中位数
+print(np.median(res))
+# 返回众数
+print(np.argmax(np.bincount(res)))

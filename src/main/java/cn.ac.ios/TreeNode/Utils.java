@@ -27,7 +27,11 @@ public class Utils {
     public static void main(String[] args) throws IOException {
         String regex = "/\\w+?b{2,3}[[0-9]&&\\d0-9&&\\w1-3](a++)\\1/()";
 //        single();
-        extracted("data/csharp/csharp.clear.multiline.json", "csharp.txt", "data/csharp/");
+        extractedSize("data/csharp/csharp.clear.multiline.json", "csharp.txt", "data/csharp/");
+        extractedSize("data/java/java.clear.multiline.json", "java.txt", "data/java/");
+        extractedSize("data/perl/perl.clear.multiline.json", "perl.txt", "data/perl/");
+        extractedSize("data/php/php.clear.multiline.flag.json", "php.txt", "data/php/");
+        extractedSize("data/python/python.clear.multiline.json", "python.txt", "data/python/");
 //        extractedSize("data/java/java.clear.multiline.json", "java.txt");
     }
 
@@ -52,7 +56,6 @@ public class Utils {
         ArrayList<String> newData = new ArrayList<>(data);
         for (int i = 0; i < newData.size(); i++) {
             regex = newData.get(i);
-            regex = "(?xn)(^|;)(\"\"(?<field>[^\"\"]*)\"\" | (?<field>[^;\"\"]*))(?=;|$)";
             Logger.getGlobal().info(i + "   -->>:" + regex);
             HashMap<String, ArrayList<ParserRuleContext>> subHashMap = new HashMap<>();
             ArrayList<String> list = new ArrayList<>();
@@ -102,6 +105,7 @@ public class Utils {
         }
         Logger.getGlobal().info(String.valueOf(count));
         FileUtils.writeLines(new File(path + "localflag_" + output), flagsList);
+        FileUtils.writeLines(new File(path + "flag_" + output), flags);
         FileUtils.writeLines(new File(path + "error_" + output), errorList);
         FileUtils.writeLines(new File(path + "result_" + output), resultList);
         ArrayList<String> list = new ArrayList<>();
@@ -112,7 +116,7 @@ public class Utils {
         System.out.println(errorList.size());
     }
 
-    private static void extractedSize(String input, String output) throws IOException {
+    private static void extractedSize(String input, String output, String path) throws IOException {
         String regex;
         ArrayList<BaseDataBean> dataBeanArrayList = new Gson().fromJson(FileUtils.readFileToString(new File(input), "utf-8"), new TypeToken<ArrayList<BaseDataBean>>() {
         }.getType());
@@ -126,29 +130,46 @@ public class Utils {
         }
         ArrayList<Integer> lenList = new ArrayList<>();
         ArrayList<Integer> nestList = new ArrayList<>();
+        ArrayList<Integer> starHeightList = new ArrayList<>();
         for (int i = 0; i < data.size(); i++) {
             regex = data.get(i);
             lenList.add(regex.length());
             int count = 0;
+            int starHeight = 0;
             Logger.getGlobal().info(i + "   -->>:" + regex);
             try {
                 PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
-                count = tree.getNest();
+                int[] ints = tree.getNestAndStar();
+                count = ints[0];
+                starHeight = ints[1];
             } catch (Exception e) {
                 try {
                     regex = regex.replace("\\\\", "\\");
                     PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
-                    count = tree.getNest();
-                } catch (Exception ignored) {
+                    int[] ints = tree.getNestAndStar();
+                    count = ints[0];
+                    starHeight = ints[1];
+                } catch (Exception e1) {
+                    try {
+                        regex = data.get(i).replace("\\", "\\\\");
+                        PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
+                        int[] ints = tree.getNestAndStar();
+                        count = ints[0];
+                        starHeight = ints[1];
+                    } catch (Exception ignored) {
+
+                    }
                 }
             }
             nestList.add(count);
+            starHeightList.add(starHeight);
         }
         System.out.println(lenList.size());
         System.out.println(nestList.size());
         nestList.sort(Comparator.naturalOrder());
-        FileUtils.writeLines(new File("data/java/" + "len_" + output), lenList);
-        FileUtils.writeLines(new File("data/java/" + "nest_" + output), nestList);
+        FileUtils.writeLines(new File(path + "len_" + output), lenList);
+        FileUtils.writeLines(new File(path + "nest_" + output), nestList);
+        FileUtils.writeLines(new File(path + "star_height_" + output), starHeightList);
     }
 
     public static void single() {
