@@ -1,0 +1,427 @@
+osgi.enroute.webresource/(?<bsn>+)/(?<version>)/(?<glob>.+)
+^[^\x00-\x1F^\(^\)^\<^\>^\@^\,^\;^\:^\\^\"^\.^\[^\]^\s]+(\.[^\x00-\x1F^\(^\)^\<^\>^\@^\,^\;^\:^\\^\"^\.^\[^\]^\s]+)*@null|\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])$
+((cast) 
+super)
+???collectionName???
+???collectionType???
+???name???
+???type???
+SimpleFileObject[
+RegularFileObject[
+Entity???
+???label.
+<![CDATA[
+\android-(\d+)\
+^(?:((?:(?:EXP-)?(?:(?:DHE|EDH|ECDH|ECDHE|SRP|RSA)-(?:DSS|RSA|ECDSA|PSK)|(?:ADH|AECDH|KRB5|PSK|SRP))|EXP)-)?(.*)-(.*)$
+(?<$1>\[^/]+\)
+$1=******
+"\\[(.[^\\]]*)\\]"
+devUiListFun = [];
+applicationConfig: [
+"com/**/Hello.java"
+"com/example/**/*.java"
+"com/example/**"
+"com/**/company/**/*.java"
+^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@null|\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])$
+CCFlow\Data\
+?tableName
+?indexName
+"$1":"***"
+\p{InCJK Unified Ideographs}&&\P{Cn}
+[\pP\p{Punct}]
+((?:(http|https|Http|Https|rtsp|Rtsp):\/\/(?:(?:[a-zA-Z0-9\$\-\_\.\+\!\*\'\(\)\,\;\?\&\=]|(?:\%[a-fA-F0-9]{2})){1,64}(?:\:(?:[a-zA-Z0-9\$\-\_\.\+\!\*\'\(\)\,\;\?\&\=]|(?:\%[a-fA-F0-9]{2})){1,25})?\@)?)?((?:(?:[a-zA-Z0-9 -퟿豈-﷏ﷰ-￯][a-zA-Z0-9 -퟿豈-﷏ﷰ-￯\-]{0,64}\.)+null|(?:(?:25[0-5]|2[0-4][0-9]|[0-1][0-9]{2}|[1-9][0-9]|[1-9])\.(?:25[0-5]|2[0-4][0-9]|[0-1][0-9]{2}|[1-9][0-9]|[1-9]|0)\.(?:25[0-5]|2[0-4][0-9]|[0-1][0-9]{2}|[1-9][0-9]|[1-9]|0)\.(?:25[0-5]|2[0-4][0-9]|[0-1][0-9]{2}|[1-9][0-9]|[0-9])))(?:\:\d{1,5})?)(\/(?:(?:[a-zA-Z0-9 -퟿豈-﷏ﷰ-￯\;\/\?\:\@\&\=\#\~\-\.\+\!\*\'\(\)\,\_])|(?:\%[a-fA-F0-9]{2}))*)?(?:\b|$)
+(?s)\Q{{{\E(.*?)\Q}}}
+^[]{2,}$
+META-INF/**/autoconf/auto-config.xml
+![CDATA[
+null**
+********
+//button[
+[\pP\pZ\pS\pM\pC]
+?matchExact
+?matchAll
+?search
+[simple type, class 
+*RESULTS_CSV*
+*RESULTS_THRESHOLD*
+.*(?i)test(?-i).*
+$1*****
+(?<$2>$1)
+/?([0-9a-zA-Z_-]++)?/([]+)[.][a-z]+
+?(?<hostandport>//null?((?<host>[^/:?#]+)(:(?<port>[0-9]+))?)?)?(?<pathnoext>(/([^/.?#;]+|\.\.))*/)((?<filenoext>[^/.?#;]+)((?<extensions>(\.[^./?#;]+)+)(?<suffix>/[^?#;]*)?)?)?(?<query>\?[^?#]*)?(?<fragment>#.*)?
+?(?<hostandport>//null?((?<host>[^/:?#]+)(:(?<port>[0-9]+))?)?)?(?<pathnoext>(/([^/.?#;]+|\.\.))*/)((?<filenoext>[^/.?#;]+)((?<extensions>(\.[^./?#;]+)+)(?<suffix>/[^?#;]*)?)?)?(?<query>)(?<fragment>)
+/** DataSonnet
+query.listResults(
+query.uniqueResult(
+query.firstResult(
+: function (
+D:\back\imgs
+ ) WHERE ROWNUM BETWEEN %s AND %s
+SELECT * FROM ( 
+$1*****$3
+<number>$1******$2</number>
+*root*
+^(?:((?:(?:EXP-)?(?:(?:DHE|EDH|ECDH|ECDHE|SRP)-(?:DSS|RSA|ECDSA)|(?:ADH|AECDH|KRB5|PSK|SRP))|EXP)-)?(.*)-(.*)$
+*@t_user@*
+[\d]+[\s]*(ns|nanosecond(s)?|us|microsecond(s)?|ms|millisecond(s)?|s|second(s)?|m|minute(s)?|h|hour(s)?|d|day(s)?
+(Object){}.valueOf(
+"ref":["client",null,
+*//m:semantics
+*//m:mrow
+? extends 
+? super 
+(\[[^\]]+\]|<[^>]+>|\.{3,}|^null
++08:00
+^[\pL\pN]+$
+?sz=50
+*/html*
+*/json
+*/xml*
+BM__MailAutoSig((?s).*?(?-s))BM__MailAutoSig
+(comment
+^((\d+[]{1}))+$
+(\d+)([]{1})
+(([\S&&[^\\]]|\\.)*)(\s*(\s+|[])\s*)(.*)
+![]($1)
+]]]]><![CDATA[>
+package com.github.fluorumlabs.disconnect.client;\n\nclass GeneratedEntryPoint {\n    public static void main(String[] args) {\n        com.github.fluorumlabs.disconnect.core.internals.DisconnectInitializer.init();\n        CLASS entryPoint = new CLASS();\n        entryPoint.run();\n    }\n}
+(.*)([^\]*)
+PARAM [
+\(([0-9TZ.:-]+,([0-9TZ.:-]+)\)
+^[\p{javaWhitespace}\p{gc=Cc}]+
+[\p{javaWhitespace}\p{gc=Cc}]+$
+(?<operator>
+?__HASH__{
+roles[
+D:\website\webapps\root\WEB-INF\classes\
+[#null#
+[*null*
+*null]
+D:\Datasets\FashionTestItemDataSet\
+*.js,*.css,*.png,*.jpg,*.gif,*.ico,*.tff,*.woff,*.svg,*.eot
+rules":[
+\{ids[]\}
+(?s)\Q${\E([^}]+?)(?:\Q:+\E([^}]+))?\Q}
+(?s)\Q%{\E(\d)(?:\Q:+\E([^}]+))?\Q}
+$1********$2
+\s*(order\sby)|$)
+"<---><+++>"
+"<---><+-+-><-+-+><+++>"
+wallclock(
+\b[]\b
+\([^\])\"
++00:00
+:contains(
+:containsOwn(
+:containsData(
+:matches(
+:matchesOwn(
+* { margin: 1 1 1 1; }
+getPhoneNumInfoExtCallback(
+file:\
+{***ID***}
+\Q${arch}
+(\pL+)|(\pL[\pL-]*\pL)
+(?<![\pL\&-])(?=[\pL\&-])null(?![\pL\&-])
++02:00
+^(?:0x[a-f0-9]+|(?:\d(?:_\d+)*\d*(?:\.\d*)?|\.\d\+)(?:e[+\-]?\d+)?[a-z]*
+src\main\java
+°=+*/-%€¤£&|[]{}()<>§'#;,@²?:.
+@default(
+\s*((null)|(null)
+assertSelectedLabel(
+verifySelectedLabel(
+^[^֑-߿יִ-﷽ﹰ-ﻼ]*[null
+^[^null]*[֑-߿יִ-﷽ﹰ-ﻼ
+[֑-߿יִ-﷽ﹰ-ﻼ
+(?{repoName})
+(?{realFolderName})
+(?{domainName})
+(?{schemaName})
+java.util.ServiceLoader[
+(?i)^([a-z](?:[-a-z0-9\+\.])*):(?:\/\/(?:(?:%[0-9a-f][0-9a-f]|[-a-z0-9\._~\x{A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}\x{10000}-\x{1FFFD}\x{20000}-\x{2FFFD}\x{30000}-\x{3FFFD}\x{40000}-\x{4FFFD}\x{50000}-\x{5FFFD}\x{60000}-\x{6FFFD}\x{70000}-\x{7FFFD}\x{80000}-\x{8FFFD}\x{90000}-\x{9FFFD}\x{A0000}-\x{AFFFD}\x{B0000}-\x{BFFFD}\x{C0000}-\x{CFFFD}\x{D0000}-\x{DFFFD}\x{E1000}-\x{EFFFD}!\$&'\(\)\*\+,;=:])*@)?((?:\[(?:(?:(?:[0-9a-f]{1,4}:){6}(?:[0-9a-f]{1,4}:[0-9a-f]{1,4}|(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(?:\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3})|::(?:[0-9a-f]{1,4}:){5}(?:[0-9a-f]{1,4}:[0-9a-f]{1,4}|(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(?:\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3})|(?:[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){4}(?:[0-9a-f]{1,4}:[0-9a-f]{1,4}|(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(?:\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3})|(?:[0-9a-f]{1,4}:[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){3}(?:[0-9a-f]{1,4}:[0-9a-f]{1,4}|(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(?:\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3})|(?:(?:[0-9a-f]{1,4}:){0,2}[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){2}(?:[0-9a-f]{1,4}:[0-9a-f]{1,4}|(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(?:\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3})|(?:(?:[0-9a-f]{1,4}:){0,3}[0-9a-f]{1,4})?::[0-9a-f]{1,4}:(?:[0-9a-f]{1,4}:[0-9a-f]{1,4}|(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(?:\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3})|(?:(?:[0-9a-f]{1,4}:){0,4}[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:[0-9a-f]{1,4}|(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(?:\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3})|(?:(?:[0-9a-f]{1,4}:){0,5}[0-9a-f]{1,4})?::[0-9a-f]{1,4}|(?:(?:[0-9a-f]{1,4}:){0,6}[0-9a-f]{1,4})?::)|v[0-9a-f]+[-a-z0-9\._~!\$&'\(\)\*\+,;=:]+)\]|(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(?:\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3}|(?:%[0-9a-f][0-9a-f]|[-a-z0-9\._~\x{A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}\x{10000}-\x{1FFFD}\x{20000}-\x{2FFFD}\x{30000}-\x{3FFFD}\x{40000}-\x{4FFFD}\x{50000}-\x{5FFFD}\x{60000}-\x{6FFFD}\x{70000}-\x{7FFFD}\x{80000}-\x{8FFFD}\x{90000}-\x{9FFFD}\x{A0000}-\x{AFFFD}\x{B0000}-\x{BFFFD}\x{C0000}-\x{CFFFD}\x{D0000}-\x{DFFFD}\x{E1000}-\x{EFFFD}!\$&'\(\)\*\+,;=@])*))(?::([0-9]*))?(?:\/(?:(?:%[0-9a-f][0-9a-f]|[-a-z0-9\._~\x{A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}\x{10000}-\x{1FFFD}\x{20000}-\x{2FFFD}\x{30000}-\x{3FFFD}\x{40000}-\x{4FFFD}\x{50000}-\x{5FFFD}\x{60000}-\x{6FFFD}\x{70000}-\x{7FFFD}\x{80000}-\x{8FFFD}\x{90000}-\x{9FFFD}\x{A0000}-\x{AFFFD}\x{B0000}-\x{BFFFD}\x{C0000}-\x{CFFFD}\x{D0000}-\x{DFFFD}\x{E1000}-\x{EFFFD}!\$&'\(\)\*\+,;=:@]))*)*|\/(?:(?:(?:(?:%[0-9a-f][0-9a-f]|[-a-z0-9\._~\x{A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}\x{10000}-\x{1FFFD}\x{20000}-\x{2FFFD}\x{30000}-\x{3FFFD}\x{40000}-\x{4FFFD}\x{50000}-\x{5FFFD}\x{60000}-\x{6FFFD}\x{70000}-\x{7FFFD}\x{80000}-\x{8FFFD}\x{90000}-\x{9FFFD}\x{A0000}-\x{AFFFD}\x{B0000}-\x{BFFFD}\x{C0000}-\x{CFFFD}\x{D0000}-\x{DFFFD}\x{E1000}-\x{EFFFD}!\$&'\(\)\*\+,;=:@]))+)(?:\/(?:(?:%[0-9a-f][0-9a-f]|[-a-z0-9\._~\x{A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}\x{10000}-\x{1FFFD}\x{20000}-\x{2FFFD}\x{30000}-\x{3FFFD}\x{40000}-\x{4FFFD}\x{50000}-\x{5FFFD}\x{60000}-\x{6FFFD}\x{70000}-\x{7FFFD}\x{80000}-\x{8FFFD}\x{90000}-\x{9FFFD}\x{A0000}-\x{AFFFD}\x{B0000}-\x{BFFFD}\x{C0000}-\x{CFFFD}\x{D0000}-\x{DFFFD}\x{E1000}-\x{EFFFD}!\$&'\(\)\*\+,;=:@]))*)*)?|(?:(?:(?:%[0-9a-f][0-9a-f]|[-a-z0-9\._~\x{A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}\x{10000}-\x{1FFFD}\x{20000}-\x{2FFFD}\x{30000}-\x{3FFFD}\x{40000}-\x{4FFFD}\x{50000}-\x{5FFFD}\x{60000}-\x{6FFFD}\x{70000}-\x{7FFFD}\x{80000}-\x{8FFFD}\x{90000}-\x{9FFFD}\x{A0000}-\x{AFFFD}\x{B0000}-\x{BFFFD}\x{C0000}-\x{CFFFD}\x{D0000}-\x{DFFFD}\x{E1000}-\x{EFFFD}!\$&'\(\)\*\+,;=:@]))+)(?:\/(?:(?:%[0-9a-f][0-9a-f]|[-a-z0-9\._~\x{A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}\x{10000}-\x{1FFFD}\x{20000}-\x{2FFFD}\x{30000}-\x{3FFFD}\x{40000}-\x{4FFFD}\x{50000}-\x{5FFFD}\x{60000}-\x{6FFFD}\x{70000}-\x{7FFFD}\x{80000}-\x{8FFFD}\x{90000}-\x{9FFFD}\x{A0000}-\x{AFFFD}\x{B0000}-\x{BFFFD}\x{C0000}-\x{CFFFD}\x{D0000}-\x{DFFFD}\x{E1000}-\x{EFFFD}!\$&'\(\)\*\+,;=:@]))*)*|(?!(?:%[0-9a-f][0-9a-f]|[-a-z0-9\._~\x{A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}\x{10000}-\x{1FFFD}\x{20000}-\x{2FFFD}\x{30000}-\x{3FFFD}\x{40000}-\x{4FFFD}\x{50000}-\x{5FFFD}\x{60000}-\x{6FFFD}\x{70000}-\x{7FFFD}\x{80000}-\x{8FFFD}\x{90000}-\x{9FFFD}\x{A0000}-\x{AFFFD}\x{B0000}-\x{BFFFD}\x{C0000}-\x{CFFFD}\x{D0000}-\x{DFFFD}\x{E1000}-\x{EFFFD}!\$&'\(\)\*\+,;=:@])))(?:\?(?:(?:%[0-9a-f][0-9a-f]|[-a-z0-9\._~\x{A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}\x{10000}-\x{1FFFD}\x{20000}-\x{2FFFD}\x{30000}-\x{3FFFD}\x{40000}-\x{4FFFD}\x{50000}-\x{5FFFD}\x{60000}-\x{6FFFD}\x{70000}-\x{7FFFD}\x{80000}-\x{8FFFD}\x{90000}-\x{9FFFD}\x{A0000}-\x{AFFFD}\x{B0000}-\x{BFFFD}\x{C0000}-\x{CFFFD}\x{D0000}-\x{DFFFD}\x{E1000}-\x{EFFFD}!\$&'\(\)\*\+,;=:@])|[\x{E000}-\x{F8FF}\x{F0000}-\x{FFFFD}|\x{100000}-\x{10FFFD}\/\?])*)?(?:\#(?:(?:%[0-9a-f][0-9a-f]|[-a-z0-9\._~\x{A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}\x{10000}-\x{1FFFD}\x{20000}-\x{2FFFD}\x{30000}-\x{3FFFD}\x{40000}-\x{4FFFD}\x{50000}-\x{5FFFD}\x{60000}-\x{6FFFD}\x{70000}-\x{7FFFD}\x{80000}-\x{8FFFD}\x{90000}-\x{9FFFD}\x{A0000}-\x{AFFFD}\x{B0000}-\x{BFFFD}\x{C0000}-\x{CFFFD}\x{D0000}-\x{DFFFD}\x{E1000}-\x{EFFFD}!\$&'\(\)\*\+,;=:@])|[\/\?])*)?$
+[Lnull;
+(([\S&&[^\\]]|\\.)*)(\s*(\s+|[])\s*)?(.*)
+[\pL\pM\p{Nd}\p{Nl}\p{Pc}[\p{InEnclosedAlphanumerics}&&\p{So}]]
+[^\pL\pM\p{Nd}\p{Nl}\p{Pc}[\p{InEnclosedAlphanumerics}&&\p{So}]]
+(?:(?<=[\pL\pM\p{Nd}\p{Nl}\p{Pc}[\p{InEnclosedAlphanumerics}&&\p{So}]])(?![\pL\pM\p{Nd}\p{Nl}\p{Pc}[\p{InEnclosedAlphanumerics}&&\p{So}]])|(?<![\pL\pM\p{Nd}\p{Nl}\p{Pc}[\p{InEnclosedAlphanumerics}&&\p{So}]])(?=[\pL\pM\p{Nd}\p{Nl}\p{Pc}[\p{InEnclosedAlphanumerics}&&\p{So}]]))
+(?:(?<=[\pL\pM\p{Nd}\p{Nl}\p{Pc}[\p{InEnclosedAlphanumerics}&&\p{So}]])(?=[\pL\pM\p{Nd}\p{Nl}\p{Pc}[\p{InEnclosedAlphanumerics}&&\p{So}]])|(?<![\pL\pM\p{Nd}\p{Nl}\p{Pc}[\p{InEnclosedAlphanumerics}&&\p{So}]])(?![\pL\pM\p{Nd}\p{Nl}\p{Pc}[\p{InEnclosedAlphanumerics}&&\p{So}]]))
+^[ A-Z_a-z\x{C0}-\x{D6}\x{D8}-\x{F6}\x{F8}-\x{2FF}\x{370}-\x{37D}\x{37F}-\x{1FFF}\x{200C}-\x{200D}\x{2070}-\x{218F}\x{2C00}-\x{2FEF}\x{3001}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFFD}\x{10000}-\x{EFFFF}][A-Z_a-z\x{C0}-\x{D6}\x{D8}-\x{F6}\x{F8}-\x{2FF}\x{370}-\x{37D}\x{37F}-\x{1FFF}\x{200C}-\x{200D}\x{2070}-\x{218F}\x{2C00}-\x{2FEF}\x{3001}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFFD}\x{10000}-\x{EFFFF}\-.0-9\x{B7}\x{300}-\x{36F}\x{203F}-\x{2040}]*$
+(?<$1>[a-zA-Z0-9-_]+)
+this.getField(
+Testing.assertPass(
+Testing.assertFail(
++review
+)Lcom/ixaris/commons/async/lib/Async;
+)Lcom/ixaris/commons/async/lib/Async
+((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[]).{6,16})
+(*)#(+)
+LIKE COALESCE(CAST(? AS VARCHAR(32672)),'')
+**NOTE**
+(selector, 
+*.[=><].*
+$1=***
+ EXTRACT(QUARTER FROM $1
+ EXTRACT(DOY FROM $1
+ EXTRACT(ISODOW FROM $1
+ EXTRACT(WEEK FROM $1
+,"data":[]
+(int address, DumpReader reader)) {
+[\unull]
+(<a href="
+?$skiptoken=null
+$1***$2
+* \n     */\n
+###+++###
+(fail 
+(pass 
+(?>'''(?:[\n\f\f\r  ]|\r\n)?({=s}.*?)(?:[\n\f\f\r  ]|\r\n)?''')|(?>\[\[({=q}[^\[\]]*)\[(?:[\n\f\f\r  ]|\r\n)?({=s}.*?)(?:[\n\f\f\r  ]|\r\n)?\]{\q}\]\])|(?>({=q}["'])({=s}.*?)(?<!\\){\q})|(?>(?>//|#)(?>\V*))|(?>/\*(?:.*?)\*/)|(?>/\[({=q}\S*)/(?:.*?)/{\q}\]/)|({=s}[^\s\[\]"'#\\]+)|({=o}\[)|({=c}\])
+(?>'''(?:[\n\f\f\r  ]|\r\n)?({=s}.*?)(?:[\n\f\f\r  ]|\r\n)?''')|(?>\[\[({=q}[^\[\]]*)\[(?:[\n\f\f\r  ]|\r\n)?({=s}.*?)(?:[\n\f\f\r  ]|\r\n)?\]{\q}\]\])|(?>({=q}["'])({=s}.*?)(?<!\\){\q})|({=s}[^\s\[\]"'\\]+)
+(?<!\pL)(\pL)(\pL*)(\PL*)
+(\PL*)((\pL)([^.?!]*)($|[.?!]+))(\PL*)
+([\pL`]+|@)
+\p{InLatin-1Supplement}
+[\p{InLatinExtended-A}\p{InLatinExtended-B}\p{InSpacingModifierLetters}\p{InIPAExtensions}\p{InCombiningDiacriticalMarks}]
+(_+t|_+i
+\subFlows\
++NoPrior
++WithPrior
+")\\W"
+\Epsilon 
+\gamma 
+\infty 
+\info 
+\iota 
+\Iota 
+\kappa 
+\lambda 
+\Lambda 
+\leftarrow 
+\Leftarrow 
+\leftrightarrow 
+\Leftrightarrow 
+\omega 
+\Omega 
+\omicron 
+\omikron 
+\Omicron 
+\Omikron 
+\partial 
+\phone 
+\prop 
+\Theta 
+\uparrow 
+\Uparrow 
+\updownarrow 
+\Updownarrow 
+\upleftarrow 
+\upsilon 
+\ypsilon 
+\Upsilon 
+\Ypsilon 
+* \n   */\n
+]] or [[
+]] and [[
+***/.svn
+***!.svn
+***/CVS
+***!CVS
+(^+|+$)
+@NP < (@NP > @NP $- /^N/
+@NP < (@NP|MWNP > @NP|MWNP $- /^N/
+[:([a-zA-Z]+)
+*$bn$*
+([\p{Alnum}\.\-]*)(*)(\.+)$
+([\ ]**[\ ]*[\p{Lu}\p{Digit}])
+([\p{Alnum}\.-]**[\.]+)[\ ]*(*[\ ]*[\p{Lu}])
++-+-+-+
+images/null)
+font/null)
+url(../
+T_ENUM(
+ }).toString()
+new long[] { 
+\Q\E([A-Za-z0-9]+)\Q
+?page={page}
+(?Z[<2]
++readonly
++cache
+*\t\.\.\. (\d+) more$
+{(aliases.
+url("../
+( UNION ALL
+( UNION
+.\src\
+^[\pL]+$
+hasRole(
+hasAnyRole(
+COUNT(*)
+<(/)?+(?:(pre)(dl|hr|nl|p|ul|ol|table|tr)(dd|dt|li|td|th|h1|h2|h3|h4|h5|h6|q)(br)(code|tt)([\S&&[^<>]]++)(null*)(?>[ \t]++|[\r\n]++[ \t]*+\*?)*/?>
+values(
+entries(
+?jandex
+?[null]
+VARCHAR(
+/null)
+.\bgm\sounds\
+([(|\[])((?:\d+\.?\d*?|))?(?:\.{2}|‥)((?:\d+\.?\d*?|\|\))?([)|\]])
+[[User:
+(.*?)(\)(.*?)(\)(.*?)$
+(.*)(\)(.*?)(\?\)(.*?)(\)(.*?)$
+(.*)(\)(.*?)(\?\)(.*?)(\)([.|\n|\r]*?)
+"\1[\2"
+(\pL|[$_])(\pL|\p{Nd}|[$_])*
+**$1**$2\r\n\r\n[mrk1]
+[\s\n\r]*(?i)create[\s\n\r]+(?i)table[\s\n\r]+(([_a-zA-Z0-9])+|\[([^\]])*\]|(`([^`])*`))[\s\n\r]*(?)AS[\s\n\r]*\(\s*((?)SELECT)
+$1$2'****'
+$1=****
+$1$2****
+${taskAssignmentBean.assignTaskToCandidateGroups('
+', execution)}
+${taskAssignmentBean.assignTaskToCandidateUsers('
+"))[^>]+>"
+(objectClass=
+)(?=;|\z)
+)(?=,|\z)
+nullnullnull)(?=;|\z)
+(String|
+(Number|
+(Boolean|
+(object|
+|String)
+|Number)
+|Boolean)
+|object)
+(options=
+(options:
+$1null[]$2
+^(([\i-[:]][\c-[:]]*)?:)?.+$
+^\[(([\i-[:]][\c-[:]]*)?:)?.+\]$
+[GREP('
+[GREP_RM('
+(?<${template}>[^/]+)
+ReportCorrectnessValidationListener [
+"-javaagent:%CATALINA_HOME%\lib\openejb-javaagent.jar"
+^[^\x00-\x1F\(\)\<\>\@\,\;\:\\\"\.\[\]\s]+(\.[^\x00-\x1F\(\)\<\>\@\,\;\:\\\"\.\[\]\s]+)*@null|\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])$
+substring(
+removeText(
+deleteChild(
+)(-)*(\w)*(-)*(\w)*
+(\w+)\s+((<?\d+)|(?))\s+((>?\d+)|(\?))
+(?{connectionName})
+(?{folderName})
+context[
+#exists(
+this.chart = new Chart(this.$container[0]
+null.addObjectFactories({
+null.addListener('$1',
+.*?"rv\\:([^\\);]+)(\\)|;)".*
+\\E(\\Q
+\\E)\\Q
+(?:char=(?:char|Character)|byte=(?:byte|Byte)|short=(?:short|Short)|int=(?:int|Integer)|long=(?:long|Long)|float=(?:float|Float)|double=(?:double|Double)|Character=(?:char|Character)|Byte=(?:byte|Byte)|Short=(?:short|Short)|Integer=(?:int|Integer)|Long=(?:long|Long)|Float=(?:float|Float)|Double=(?:double|Double)
+getsetis)([A-Z]\w*)
+getis)([A-Z]\w*)
+set)([A-Z]\w*)
++unstructuredName=
++unstructuredAddress=
+\permanentIdentifier
+) [A-Z]
+/TABLE[
+(\w|\pP|\pS|\s)+
+\pP|\pS
+.(\pP|\pS|　| |\s|的|把|和|也)+.
+*slash*
+*greatertemp*
+*lesstemp*
+^null+(\.null+)*@null|\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])$
+$count_null:ElementInstance(
+eval(DVUtil.isSubClassOf(true, $count_predicate
+eval(DVUtil.equalDV(true, $count_predicate
+(?i)from(?-i)\s+[|null].*
+(\.(*))
+((\s|,|\.|^|\-)
++PAGE+
+null\s*")"\s*(.+)$
+null(", "
+http://***@
+https://***@
+ssh://***@
+svn://***@
+,"subButton":[]
+"\\b("
+[\pP\pZ\pS]
+^(.*)?[](.*)?$
+[nullnullnullnull
+*[local-name()='tspan']
+^(+)=(("?)(*)\3).*$
+{"type":"menu","id":"admin","label":"Admin","items":[
+{\`\i}
+{\'\i}
+*[@template]
+.*\([^\]+)\tests\.jar
+.*\(\.)git(\.*|$)
+,**/*.groovy
+.*\((\.|_)svn|.hg|CVS)(\.*|$)
+${project.name)
+.*\(\.)hg(\.*|$)
+**NB_SEMI**
+.*\(\.*|$)
+/demo{**}
+(\{(?iu)propertyname(?-iu)\}|\{(\d)\}|[^\{\}])+
+\{(?iu)propertyname(?-iu)\}
+.*(\)(\d*)(\).*
+?=null&=
+ CLOB)
+ VARBINARY)
+ CHAR(
+ BOOLEAN)
+SUBSTRING(
+ VARCHAR(
+ SMALLINT)
+ BIGINT)
+RESOURCE)
+ DATE)
+POSITION('/' IN 
+(-[a-zA-Z0-9_]+)*\
+^\s*(\(\s*(\w+)\s*(!?=)\s*"([^"]+)"\s*\)\s*)*\s*\(\s*(?i)version(?-i)\s*(\d\.\d)\s*;\s*(?i)acl(?-i)\s*"([^"]*)"\s*;\s*\s*(\w+)\s*\(([^()]+)\)\s*(.+?"[)]*)\s*;\s*\s*\)\s*$
+((?i)[\.{1}[a-f]\d:\+{1}\*/{1}\t\[{1}\]{1}]+(?-i))
+indices(
+(.*) []+ .*
+LIKE UPPER(?)
+\p{block=Miscellaneous Symbols And Pictographs}+
+\p{block=Transport and Map Symbols}+
+\p{block=Emoticons}+
+\p{block=Enclosed Alphanumeric Supplement}+
+\p{block=Mahjong Tiles}+
+\p{block=Domino Tiles}+
+\p{block=Miscellaneous Symbols}+
+\p{block=Playing Cards}+
+)[\|/](
+*[local-name() = 'error-page']/*[local-name() = 'exception-type']
+*[local-name() = 'location']
+*[local-name() = 'error-page'][*[local-name() = 'error-code'] = '500'] / *[local-name() = 'location']
+texMap2D(
+texMap2DRect(
+\.grid\
+\.list\
+(?<$1>[^/]+)
+ExtensionElem (
+*[self::exclude-default-interceptors[text()="true"] or self::exclude-class-interceptors[text()="true"]]
+(?)-updateMovies[1-9]
+(?)-updateTv[1-9]
+?vclass
+?subject
+?property
+?subjectType
+?objectType
+?AuthState=
+Session id: [
+synapse(contentType='
+.*[\].*
+*.lara
+) AS null
+null[](\S*)
+*/gmd:date/gco:Date
+")"\.doc_.*?\.pr_.*
+&(?:amp|lt|gt);|[\x{}-\x{}]
+select COUNT(*) from
