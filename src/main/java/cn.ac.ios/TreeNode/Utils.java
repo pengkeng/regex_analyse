@@ -27,11 +27,11 @@ public class Utils {
     public static void main(String[] args) throws IOException {
         String regex = "/\\w+?b{2,3}[[0-9]&&\\d0-9&&\\w1-3](a++)\\1/()";
 //        single();
-        extracted("data/csharp/csharp.clear.multiline.json", "csharp.txt");
+        extracted("data/csharp/csharp.clear.multiline.json", "csharp.txt", "data/csharp/");
 //        extractedSize("data/java/java.clear.multiline.json", "java.txt");
     }
 
-    private static void extracted(String input, String output) throws IOException {
+    private static void extracted(String input, String output, String path) throws IOException {
         String regex;
         ArrayList<BaseDataBean> dataBeanArrayList = new Gson().fromJson(FileUtils.readFileToString(new File(input), "utf-8"), new TypeToken<ArrayList<BaseDataBean>>() {
         }.getType());
@@ -52,13 +52,13 @@ public class Utils {
         ArrayList<String> newData = new ArrayList<>(data);
         for (int i = 0; i < newData.size(); i++) {
             regex = newData.get(i);
-            String flag = flags.get(i);
+            regex = "(?xn)(^|;)(\"\"(?<field>[^\"\"]*)\"\" | (?<field>[^;\"\"]*))(?=;|$)";
             Logger.getGlobal().info(i + "   -->>:" + regex);
             HashMap<String, ArrayList<ParserRuleContext>> subHashMap = new HashMap<>();
             ArrayList<String> list = new ArrayList<>();
-            if (flag.length() > 0) {
-                list.add(flag);
-            }
+//            if (flag.length() > 0) {
+//                list.add(flag);
+//            }
             try {
                 PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
                 tree.traverse();
@@ -101,14 +101,14 @@ public class Utils {
             flagsList.add(stringBuilder.toString());
         }
         Logger.getGlobal().info(String.valueOf(count));
-        FileUtils.writeLines(new File("data/csharp/" + "flag_" + output), flagsList);
-        FileUtils.writeLines(new File("data/js/" + "error_" + output), errorList);
-        FileUtils.writeLines(new File("data/js/" + "result_" + output), resultList);
+        FileUtils.writeLines(new File(path + "localflag_" + output), flagsList);
+        FileUtils.writeLines(new File(path + "error_" + output), errorList);
+        FileUtils.writeLines(new File(path + "result_" + output), resultList);
         ArrayList<String> list = new ArrayList<>();
         for (String key : hashMap.keySet()) {
             list.add(key + " : " + hashMap.get(key));
         }
-        FileUtils.writeLines(new File("data/js/" + output), list);
+        FileUtils.writeLines(new File(path + output), list);
         System.out.println(errorList.size());
     }
 

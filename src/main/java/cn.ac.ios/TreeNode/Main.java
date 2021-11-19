@@ -49,7 +49,7 @@ public class Main {
         String regex = "\\u1234\\x{0f}\\Q\\134/\\w+?b{2,3}[[0-9]&&\\d0-9&&\\w1-3](a++)\\1(?'first'a+) and again (\\k{first})/i";
 //        regex = "/abc/i";
 //        regex = "\\\\u([0-9a-f]{4}+)";
-        regex = "(?xn)(^|;)(\"\"(?<field>[^\"\"]*)\"\" | (?<field>[^;\"\"]*))(?=;|$)";
+        regex = "(?x)(?<!\\\\)\\\\((?!\\\\?)";
 //        regex = "";
         PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
         System.out.println(tree.toStringASCII());
