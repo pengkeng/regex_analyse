@@ -2,7 +2,7 @@ import openpyxl
 import xlrd
 import xlwt
 
-file = "../../data/java/java.txt"
+file = "../../data/js/js.txt"
 m = dict()
 lines = open(file, encoding="utf-8").readlines()
 for line in lines:
@@ -21,6 +21,6 @@ for i in range(18, 61):
     val = val.strip(" ")
     if val in m.keys():
         print(val + " " + m[val])
-        sheet["M" + str(i)] =  m[val]
+        sheet["S" + str(i)] =  m[val]
 
 readbook.save(r'/Users/pqc/Desktop/统计.xlsx')

@@ -1,9 +1,9 @@
 import json
 import re
 
-file = "../../data/python/python.clear.multiline.json"
-file2 = "../../data/python/nest_python.txt"
-file3 = "../../data/python/star_height_python.txt"
+file = "../../data/js/js.clear.dy.json"
+file2 = "../../data/js/nest_js.txt"
+file3 = "../../data/js/star_height_js.txt"
 
 data = json.loads(open(file, encoding="utf-8").read())
 files = set()

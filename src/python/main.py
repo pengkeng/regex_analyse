@@ -21,6 +21,7 @@ for item in data:
         if "Dynamic-Pattern " not in pattern:
             res.append(pattern)
             newregex.append(regex)
+        
         # if pattern == "":
         #     print(pattern)
         # flags = ""

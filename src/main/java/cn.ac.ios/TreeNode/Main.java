@@ -28,8 +28,43 @@ public class Main {
 //        String regex = "/\\w+?b{2,3}[[0-9]&&\\d0-9&&\\w1-3](a++)\\1/()";
 //        single();
 
-        local_flag("data/java/localflag_java.txt");
-        flagJava("data/java/flag_java.txt");
+        local_flag("data/js/localflag_js.txt");
+        flagJs("data/js/flag_js.txt");
+
+    }
+
+    private static void flagJs(String file) throws IOException {
+        ArrayList<String> list = (ArrayList<String>) FileUtils.readLines(new File(file), "utf-8");
+        HashSet<Character> flags = new HashSet<>();
+        HashMap<Character, Integer> hashMap = new HashMap<>();
+        flags.add('i');
+        flags.add('g');
+        flags.add('m');
+        flags.add('s');
+        flags.add('x');
+        int count = 0;
+        for (String str : list) {
+            str = str.toLowerCase();
+            if (str.replace(" ", "").length() > 0) {
+                count++;
+            } else {
+                continue;
+            }
+            HashSet<Character> set = new HashSet<>();
+            for (int i = 0; i < str.length(); i++) {
+                Character character = str.charAt(i);
+                if (flags.contains(character)) {
+                    set.add(character);
+                }
+            }
+            for (Character character : set) {
+                hashMap.put(character, hashMap.getOrDefault(character, 0) + 1);
+            }
+        }
+        System.out.println(count);
+        for (Character key : hashMap.keySet()) {
+            System.out.println(key + " " + hashMap.get(key));
+        }
     }
 
     private static void flagPerl(String file) throws IOException {
