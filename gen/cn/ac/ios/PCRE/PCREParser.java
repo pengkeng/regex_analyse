@@ -371,7 +371,7 @@ public class PCREParser extends Parser {
 			setState(147);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,2,_ctx);
-			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -435,7 +435,7 @@ public class PCREParser extends Parser {
 			setState(153);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,3,_ctx);
-			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -1563,7 +1563,7 @@ public class PCREParser extends Parser {
 				setState(344); 
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,24,_ctx);
-			} while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER );
+			} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
 			setState(353); 
 			_errHandler.sync(this);
 			_alt = 1;
@@ -1595,7 +1595,7 @@ public class PCREParser extends Parser {
 						setState(351); 
 						_errHandler.sync(this);
 						_alt = getInterpreter().adaptivePredict(_input,25,_ctx);
-					} while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER );
+					} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
 					}
 					}
 					break;
@@ -1605,7 +1605,7 @@ public class PCREParser extends Parser {
 				setState(355); 
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,26,_ctx);
-			} while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER );
+			} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
 			}
 		}
 		catch (RecognitionException re) {
@@ -6653,7 +6653,7 @@ public class PCREParser extends Parser {
 				setState(1216); 
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,70,_ctx);
-			} while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER );
+			} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
 			}
 		}
 		catch (RecognitionException re) {
@@ -7237,7 +7237,7 @@ public class PCREParser extends Parser {
 			setState(1247);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,75,_ctx);
-			while ( _alt!=1 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=1 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1+1 ) {
 					{
 					{

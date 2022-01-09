@@ -711,6 +711,16 @@ public class PCREBaseListener implements PCREListener {
     public void exitAtom(PCREParser.AtomContext ctx) {
     }
 
+    @Override
+    public void enterAnchor(PCREParser.AnchorContext ctx) {
+
+    }
+
+    @Override
+    public void exitAnchor(PCREParser.AnchorContext ctx) {
+
+    }
+
     /**
      * {@inheritDoc}
      *

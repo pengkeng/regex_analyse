@@ -504,6 +504,7 @@ callout
 atom
  : subroutine_reference
  | shared_atom
+ | anchor
  | literal
  | character_class
  | capture
@@ -518,19 +519,21 @@ atom
  | backtrack_control
  | newline_convention
  | callout
- | Dot
- | Caret
- | StartOfSubject
- | WordBoundary
- | NonWordBoundary
- | EndOfSubjectOrLine
- | EndOfSubjectOrLineEndOfSubject
- | EndOfSubject
- | PreviousMatchInSubject
  | ResetStartMatch
  | OneDataUnit
  | ExtendedUnicodeChar
  ;
+
+anchor
+    :
+    Caret
+    | StartOfSubject
+    | WordBoundary
+    | NonWordBoundary
+    | EndOfSubjectOrLine
+    | EndOfSubjectOrLineEndOfSubject
+    | EndOfSubject
+    | PreviousMatchInSubject;
 
 cc_atom
  : character_class // add for java by czx
@@ -559,7 +562,8 @@ shared_atom
  | VerticalWhiteSpace
  | NotVerticalWhiteSpace
  | WordChar
- | NotWordChar 
+ | NotWordChar
+ | Dot
  ;
 
 literal

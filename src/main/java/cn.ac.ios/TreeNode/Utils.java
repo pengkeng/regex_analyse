@@ -25,14 +25,40 @@ public class Utils {
     public static HashMap<String, String> errorMap = new HashMap<>();
 
     public static void main(String[] args) throws IOException {
-        String regex = "/\\w+?b{2,3}[[0-9]&&\\d0-9&&\\w1-3](a++)\\1/()";
+//        String regex = "/\\w+?b{2,3}[[0-9]&&\\d0-9&&\\w1-3](a++)\\1/()";
 //        single();
-        extractedSize("data/csharp/csharp.clear.multiline.json", "csharp.txt", "data/csharp/");
-        extractedSize("data/java/java.clear.multiline.json", "java.txt", "data/java/");
-        extractedSize("data/perl/perl.clear.multiline.json", "perl.txt", "data/perl/");
-        extractedSize("data/php/php.clear.multiline.flag.json", "php.txt", "data/php/");
-        extractedSize("data/python/python.clear.multiline.json", "python.txt", "data/python/");
-//        extractedSize("data/java/java.clear.multiline.json", "java.txt");
+//        extracted("data/java/java.clear.multiline.json", "java.txt","data/java/");
+        extracted("data/csharp/csharp.clear.multiline.json", "csharp.txt","data/csharp/");
+        extracted("data/perl/perl.clear.multiline.json", "perl.txt","data/perl/");
+        extracted("data/php/php.clear.multiline.flag.json", "php.txt","data/php/");
+        extracted("data/python/python.clear.multiline.json", "python.txt","data/python/");
+
+//        ArrayList<BaseDataBean> dataBeanArrayList = new Gson().fromJson(FileUtils.readFileToString(new File("data/java/java.clear.multiline.unique.json"), "utf-8"), new TypeToken<ArrayList<BaseDataBean>>() {
+//        }.getType());
+//        HashSet<String> data = new HashSet<>();
+//        for (BaseDataBean baseDataBean : dataBeanArrayList) {
+//            for (Regexps regexps : baseDataBean.getRegexps()) {
+//                String pattern = regexps.getPattern().replace("\n", "\\n").replace("\r", "\\r");
+//                if (pattern.length() > 2) {
+//                    data.add(pattern);
+//                }
+//            }
+//        }
+//        System.out.println(data.size());
+//        FileUtils.writeLines(new File("data/java/java.clear.unique.txt"), data);
+//        ArrayList<String> data = (ArrayList<String>) FileUtils.readLines(new File("data/java/java.clear.unique.txt"), "utf-8");
+//        ArrayList<String> subdata = new ArrayList<>();
+//        int index = 1;
+//        for (int i = 1; i <= data.size(); i++) {
+//            subdata.add(data.get(i - 1));
+//            if (i % 1000 == 0) {
+//                FileUtils.writeLines(new File("/Users/pqc/Desktop/java/" + index + ".txt"), subdata);
+//                index++;
+//                subdata.clear();
+//            }
+//        }
+//        FileUtils.writeLines(new File("/Users/pqc/Desktop/java/" + index + ".txt"), subdata);
+
     }
 
     private static void extracted(String input, String output, String path) throws IOException {
@@ -112,7 +138,7 @@ public class Utils {
         for (String key : hashMap.keySet()) {
             list.add(key + " : " + hashMap.get(key));
         }
-        FileUtils.writeLines(new File(path + output), list);
+        FileUtils.writeLines(new File(path +"1.0_" +output), list);
         System.out.println(errorList.size());
     }
 
@@ -175,7 +201,7 @@ public class Utils {
     public static void single() {
         String regex = "/\\w+?b{2,3}[[0-9]&&\\d0-9&&\\w1-3](a++)\\1/i";
 //        regex = "/abc/i";
-        regex = "((?=(abc))|abc|\\da[abc0-9]+)+(?=((a+)+|b)+)+";
+        regex = "^[^abc]((?=(abc))|abc|\\da[abc0-9]+)+(?=((a+)+|b)+)+";
         PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
         System.out.println(tree.toStringASCII());
         tree.traverse();
