@@ -16,13 +16,19 @@ public class Test {
 
     public static void main(String[] args) {
 //        gci(11000);
-        Pattern pattern = Pattern.compile("([a-z]|[\\w])+");
+
+//        Pattern pattern = Pattern.compile("(a|b)*");
+//        String str = "";
+//        Matcher matcher = pattern.matcher(str);
+//        boolean b = matcher.matches();
+//        System.out.println(b);
+        Pattern pattern = Pattern.compile("([\\w]|[0-9])+");
         String str = "";
         for (int i = 0; i < 1000; i++) {
-            str = str + "aaaaaaaaa";
+            str = str + "1111111111";
             long time = System.currentTimeMillis();
             try {
-                Matcher matcher = pattern.matcher(str+"!");
+                Matcher matcher = pattern.matcher(str);
                 boolean b = matcher.matches();
                 System.out.println(System.currentTimeMillis() - time + " " + b + " " + str.length());
             }catch (Exception e){

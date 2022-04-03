@@ -157,6 +157,13 @@ public class PCREBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements P
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
+	@Override public T visitCharacter_octal(PCREParser.Character_octalContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
 	@Override public T visitCapture(PCREParser.CaptureContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}

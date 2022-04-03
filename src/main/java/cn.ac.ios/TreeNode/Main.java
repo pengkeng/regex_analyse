@@ -26,10 +26,10 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 //        String regex = "/\\w+?b{2,3}[[0-9]&&\\d0-9&&\\w1-3](a++)\\1/()";
-//        single();
+        single();
 
-        local_flag("data/js/localflag_js.txt");
-        flagJs("data/js/flag_js.txt");
+//        local_flag("data/js/localflag_js.txt");
+//        flagJs("data/js/flag_js.txt");
 
     }
 
@@ -241,12 +241,14 @@ public class Main {
         String regex = "\\u1234\\x{0f}\\Q\\134/\\w+?b{2,3}[[0-9]&&\\d0-9&&\\w1-3](a++)\\1(?'first'a+) and again (\\k{first})/i";
 //        regex = "/abc/i";
 //        regex = "\\\\u([0-9a-f]{4}+)";
-        regex = "(?x)(?<!\\\\)\\\\((?!\\\\?)";
+        regex = "((a+)a+?aa?+(b+|c{2,3})+)++";
 //        regex = "";
+
         PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
         System.out.println(tree.toStringASCII());
-        tree.traverse();
-        HashMap<String, ArrayList<ParserRuleContext>> hashMap = tree.hashMap;
-        System.out.println(hashMap.size());
+        int a = tree.getQuantifier();
+        System.out.println(a);
+//        HashMap<String, ArrayList<ParserRuleContext>> hashMap = tree.hashMap;
+//        System.out.println(hashMap.size());
     }
 }

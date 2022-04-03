@@ -160,6 +160,12 @@ public final class PCREBuilder {
             return getStarCount(tree.getChild(0));
         }
 
+        public int getQuantifier() {
+            PCREParser parser = new Parser(input).build();
+            ParseTree tree = parser.parse();
+            return getQuantifierCount(tree.getChild(0));
+        }
+
         public int[] getNestAndStar() {
             PCREParser parser = new Parser(input).build();
             ParseTree tree = parser.parse();
@@ -209,6 +215,29 @@ public final class PCREBuilder {
                 int max = 0;
                 for (int i = 0; i < tree.getChildCount(); i++) {
                     max = Math.max(max, getStarCount(tree.getChild(i)));
+                }
+                return max;
+            }
+        }
+
+
+        public int getQuantifierCount(ParseTree tree) {
+            if (tree.getChildCount() == 0) {
+                return 0;
+            } else if (tree.getChildCount() == 1) {
+                return  getQuantifierCount(tree.getChild(0));
+            } else if (tree instanceof PCREParser.ElementContext) {
+                if (tree.getChildCount() == 2 &&
+                        tree.getChild(0) instanceof PCREParser.AtomContext &&
+                        tree.getChild(1) instanceof PCREParser.QuantifierContext) {
+                    return  getQuantifierCount(tree.getChild(0)) + 1;
+                } else {
+                    return  getQuantifierCount(tree.getChild(0));
+                }
+            } else {
+                int max = 0;
+                for (int i = 0; i < tree.getChildCount(); i++) {
+                    max = Math.max(max,  getQuantifierCount(tree.getChild(i)));
                 }
                 return max;
             }

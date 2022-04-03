@@ -256,6 +256,18 @@ public class PCREBaseListener implements PCREListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterCharacter_octal(PCREParser.Character_octalContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCharacter_octal(PCREParser.Character_octalContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterCapture(PCREParser.CaptureContext ctx) { }
 	/**
 	 * {@inheritDoc}

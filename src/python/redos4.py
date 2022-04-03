@@ -1,9 +1,9 @@
 import json
 import os
 
-source = "../../data/php/php.clear.multiline.flag.json"
-file = '../../data/php/php.really.redos.unique.json'
-data = json.loads(open(source, encoding="utf_8").read())
+source = "../../data/java/java.redos.clear.multiline.json"
+file = '../../data/java/java.really.redos.unique.json'
+data = []
 redos = json.loads(open(file, encoding="utf_8").read())
 d = dict()
 for i in redos:
@@ -29,5 +29,5 @@ for item in data:
             c+=1
             print(c)
 
-with open('../../data/php/php.really.redos.json', 'w') as f:
+with open('../../data/java/java.really.redos.unique.json', 'w') as f:
     json.dump(data, f, indent=" ")

@@ -131,6 +131,12 @@ public interface PCREVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitBackreference_or_octal(PCREParser.Backreference_or_octalContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link PCREParser#character_octal}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCharacter_octal(PCREParser.Character_octalContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link PCREParser#capture}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

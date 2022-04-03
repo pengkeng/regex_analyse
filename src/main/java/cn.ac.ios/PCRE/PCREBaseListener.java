@@ -332,6 +332,16 @@ public class PCREBaseListener implements PCREListener {
     public void exitBackreference_or_octal(PCREParser.Backreference_or_octalContext ctx) {
     }
 
+    @Override
+    public void enterCharacter_octal(PCREParser.Character_octalContext ctx) {
+
+    }
+
+    @Override
+    public void exitCharacter_octal(PCREParser.Character_octalContext ctx) {
+
+    }
+
     /**
      * {@inheritDoc}
      *

@@ -208,6 +208,16 @@ public interface PCREListener extends ParseTreeListener {
 	 */
 	void exitBackreference_or_octal(PCREParser.Backreference_or_octalContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link PCREParser#character_octal}.
+	 * @param ctx the parse tree
+	 */
+	void enterCharacter_octal(PCREParser.Character_octalContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PCREParser#character_octal}.
+	 * @param ctx the parse tree
+	 */
+	void exitCharacter_octal(PCREParser.Character_octalContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link PCREParser#capture}.
 	 * @param ctx the parse tree
 	 */

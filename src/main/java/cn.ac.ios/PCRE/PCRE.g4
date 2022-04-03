@@ -224,6 +224,11 @@ backreference_or_octal
  | Backslash digit
  ;
 
+character_octal
+ : octal_char
+ | Backslash digit
+ ;
+
 // CAPTURING
 //
 //         (...)           capturing group
@@ -540,7 +545,7 @@ cc_atom
  | cc_literal Hyphen cc_literal
  | shared_atom
  | cc_literal
- | backreference_or_octal // only octal is valid in a cc
+ | character_octal // only octal is valid in a cc
  ;
 
 shared_atom

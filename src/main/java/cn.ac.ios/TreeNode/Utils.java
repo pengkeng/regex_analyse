@@ -27,11 +27,12 @@ public class Utils {
     public static void main(String[] args) throws IOException {
 //        String regex = "/\\w+?b{2,3}[[0-9]&&\\d0-9&&\\w1-3](a++)\\1/()";
 //        single();
-//        extracted("data/java/java.clear.multiline.json", "java.txt","data/java/");
-        extracted("data/csharp/csharp.clear.multiline.json", "csharp.txt","data/csharp/");
-        extracted("data/perl/perl.clear.multiline.json", "perl.txt","data/perl/");
-        extracted("data/php/php.clear.multiline.flag.json", "php.txt","data/php/");
-        extracted("data/python/python.clear.multiline.json", "python.txt","data/python/");
+        extractedSize("data/java/java.clear.multiline.json", "java.txt", "data/java/");
+        extractedSize("data/csharp/csharp.clear.multiline.json", "csharp.txt", "data/csharp/");
+        extractedSize("data/perl/perl.clear.multiline.json", "perl.txt", "data/perl/");
+        extractedSize("data/php/php.clear.multiline.flag.json", "php.txt", "data/php/");
+        extractedSize("data/python/python.clear.multiline.json", "python.txt", "data/python/");
+
 
 //        ArrayList<BaseDataBean> dataBeanArrayList = new Gson().fromJson(FileUtils.readFileToString(new File("data/java/java.clear.multiline.unique.json"), "utf-8"), new TypeToken<ArrayList<BaseDataBean>>() {
 //        }.getType());
@@ -138,7 +139,7 @@ public class Utils {
         for (String key : hashMap.keySet()) {
             list.add(key + " : " + hashMap.get(key));
         }
-        FileUtils.writeLines(new File(path +"1.0_" +output), list);
+        FileUtils.writeLines(new File(path + "2.0_" + output), list);
         System.out.println(errorList.size());
     }
 
@@ -157,51 +158,58 @@ public class Utils {
         ArrayList<Integer> lenList = new ArrayList<>();
         ArrayList<Integer> nestList = new ArrayList<>();
         ArrayList<Integer> starHeightList = new ArrayList<>();
+        ArrayList<Integer> quantifierHeightList = new ArrayList<>();
         for (int i = 0; i < data.size(); i++) {
             regex = data.get(i);
-            lenList.add(regex.length());
-            int count = 0;
-            int starHeight = 0;
+//            lenList.add(regex.length());
+//            int count = 0;
+//            int starHeight = 0;
+            int n = 0;
             Logger.getGlobal().info(i + "   -->>:" + regex);
             try {
                 PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
-                int[] ints = tree.getNestAndStar();
-                count = ints[0];
-                starHeight = ints[1];
+//                    int[] ints = tree.getNestAndStar();
+//                    count = ints[0];
+//                    starHeight = ints[1];
+                n = tree.getQuantifier();
             } catch (Exception e) {
                 try {
                     regex = regex.replace("\\\\", "\\");
                     PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
-                    int[] ints = tree.getNestAndStar();
-                    count = ints[0];
-                    starHeight = ints[1];
+//                    int[] ints = tree.getNestAndStar();
+//                    count = ints[0];
+//                    starHeight = ints[1];
+                    n = tree.getQuantifier();
                 } catch (Exception e1) {
                     try {
                         regex = data.get(i).replace("\\", "\\\\");
                         PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
-                        int[] ints = tree.getNestAndStar();
-                        count = ints[0];
-                        starHeight = ints[1];
+                        n = tree.getQuantifier();
+//                        count = ints[0];
+//                        starHeight = ints[1];
                     } catch (Exception ignored) {
 
                     }
                 }
             }
-            nestList.add(count);
-            starHeightList.add(starHeight);
+//            nestList.add(count);
+//            starHeightList.add(starHeight);
+            quantifierHeightList.add(n);
         }
-        System.out.println(lenList.size());
-        System.out.println(nestList.size());
-        nestList.sort(Comparator.naturalOrder());
-        FileUtils.writeLines(new File(path + "len_" + output), lenList);
-        FileUtils.writeLines(new File(path + "nest_" + output), nestList);
-        FileUtils.writeLines(new File(path + "star_height_" + output), starHeightList);
+//        System.out.println(lenList.size());
+//        System.out.println(nestList.size());
+//        nestList.sort(Comparator.naturalOrder());
+//        QuantifierHeightList.add(n)
+//        FileUtils.writeLines(new File(path + "len_" + output), lenList);
+//        FileUtils.writeLines(new File(path + "nest_" + output), nestList);
+//        FileUtils.writeLines(new File(path + "star_height_" + output), starHeightList);
+        FileUtils.writeLines(new File(path + "quantifier_height_" + output), quantifierHeightList);
     }
 
     public static void single() {
         String regex = "/\\w+?b{2,3}[[0-9]&&\\d0-9&&\\w1-3](a++)\\1/i";
 //        regex = "/abc/i";
-        regex = "^[^abc]((?=(abc))|abc|\\da[abc0-9]+)+(?=((a+)+|b)+)+";
+        regex = "^[^abc\\112]((?=(abc))|abc|\\da[abc0-9]+)+(?=((a+)+|b)+)+\\12";
         PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
         System.out.println(tree.toStringASCII());
         tree.traverse();
@@ -209,7 +217,6 @@ public class Utils {
         System.out.println(hashMap.size());
         System.out.println(tree.getNest());
         System.out.println(tree.getStar());
-
     }
 
     public static String mapToString(HashMap<String, ArrayList<ParserRuleContext>> hashMap) {
