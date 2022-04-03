@@ -162,16 +162,16 @@ public class Utils {
         for (int i = 0; i < data.size(); i++) {
             regex = data.get(i);
 //            lenList.add(regex.length());
-//            int count = 0;
+            int count = 0;
 //            int starHeight = 0;
-            int n = 0;
+//            int n = 0;
             Logger.getGlobal().info(i + "   -->>:" + regex);
             try {
                 PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
 //                    int[] ints = tree.getNestAndStar();
 //                    count = ints[0];
 //                    starHeight = ints[1];
-                n = tree.getQuantifier();
+                count = tree.getNest();
             } catch (Exception e) {
                 try {
                     regex = regex.replace("\\\\", "\\");
@@ -179,31 +179,31 @@ public class Utils {
 //                    int[] ints = tree.getNestAndStar();
 //                    count = ints[0];
 //                    starHeight = ints[1];
-                    n = tree.getQuantifier();
+                    count = tree.getNest();
                 } catch (Exception e1) {
                     try {
                         regex = data.get(i).replace("\\", "\\\\");
                         PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
-                        n = tree.getQuantifier();
-//                        count = ints[0];
+//                        n = tree.getQuantifier();
+                        count = tree.getNest();
 //                        starHeight = ints[1];
                     } catch (Exception ignored) {
 
                     }
                 }
             }
-//            nestList.add(count);
+            nestList.add(count);
 //            starHeightList.add(starHeight);
-            quantifierHeightList.add(n);
+//            quantifierHeightList.add(n);
         }
 //        System.out.println(lenList.size());
 //        System.out.println(nestList.size());
 //        nestList.sort(Comparator.naturalOrder());
 //        QuantifierHeightList.add(n)
 //        FileUtils.writeLines(new File(path + "len_" + output), lenList);
-//        FileUtils.writeLines(new File(path + "nest_" + output), nestList);
+        FileUtils.writeLines(new File(path + "nest_" + output), nestList);
 //        FileUtils.writeLines(new File(path + "star_height_" + output), starHeightList);
-        FileUtils.writeLines(new File(path + "quantifier_height_" + output), quantifierHeightList);
+//        FileUtils.writeLines(new File(path + "quantifier_height_" + output), quantifierHeightList);
     }
 
     public static void single() {

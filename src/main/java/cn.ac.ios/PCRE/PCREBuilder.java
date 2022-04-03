@@ -180,14 +180,10 @@ public final class PCREBuilder {
                 return 0;
             } else if (tree.getChildCount() == 1) {
                 return getCount(tree.getChild(0));
-            } else if (tree instanceof PCREParser.ElementContext) {
-                if (tree.getChildCount() == 2 &&
-                        tree.getChild(0) instanceof PCREParser.AtomContext &&
-                        tree.getChild(1) instanceof PCREParser.QuantifierContext) {
-                    return getCount(tree.getChild(0)) + 1;
-                } else {
-                    return getCount(tree.getChild(0));
-                }
+            } else if (tree instanceof PCREParser.CaptureContext && tree.getChildCount() == 3) {
+                return 1 + getCount(tree.getChild(tree.getChildCount() - 2));
+            } else if (tree instanceof PCREParser.Name_caturpeContext || tree instanceof PCREParser.Base_non_captureContext || tree instanceof PCREParser.Reset_non_captureContext || tree instanceof PCREParser.Atomic_non_captureContext) {
+                return 1 + getCount(tree.getChild(tree.getChildCount() - 2));
             } else {
                 int max = 0;
                 for (int i = 0; i < tree.getChildCount(); i++) {
@@ -225,19 +221,19 @@ public final class PCREBuilder {
             if (tree.getChildCount() == 0) {
                 return 0;
             } else if (tree.getChildCount() == 1) {
-                return  getQuantifierCount(tree.getChild(0));
+                return getQuantifierCount(tree.getChild(0));
             } else if (tree instanceof PCREParser.ElementContext) {
                 if (tree.getChildCount() == 2 &&
                         tree.getChild(0) instanceof PCREParser.AtomContext &&
                         tree.getChild(1) instanceof PCREParser.QuantifierContext) {
-                    return  getQuantifierCount(tree.getChild(0)) + 1;
+                    return getQuantifierCount(tree.getChild(0)) + 1;
                 } else {
-                    return  getQuantifierCount(tree.getChild(0));
+                    return getQuantifierCount(tree.getChild(0));
                 }
             } else {
                 int max = 0;
                 for (int i = 0; i < tree.getChildCount(); i++) {
-                    max = Math.max(max,  getQuantifierCount(tree.getChild(i)));
+                    max = Math.max(max, getQuantifierCount(tree.getChild(i)));
                 }
                 return max;
             }

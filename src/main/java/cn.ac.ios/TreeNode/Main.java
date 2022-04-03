@@ -241,12 +241,11 @@ public class Main {
         String regex = "\\u1234\\x{0f}\\Q\\134/\\w+?b{2,3}[[0-9]&&\\d0-9&&\\w1-3](a++)\\1(?'first'a+) and again (\\k{first})/i";
 //        regex = "/abc/i";
 //        regex = "\\\\u([0-9a-f]{4}+)";
-        regex = "((a+)a+?aa?+(b+|c{2,3})+)++";
+        regex = "((?>(?:a+))a+?aa?+)++";
 //        regex = "";
-
         PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
         System.out.println(tree.toStringASCII());
-        int a = tree.getQuantifier();
+        int a = tree.getNest();
         System.out.println(a);
 //        HashMap<String, ArrayList<ParserRuleContext>> hashMap = tree.hashMap;
 //        System.out.println(hashMap.size());
