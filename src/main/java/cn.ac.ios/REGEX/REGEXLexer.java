@@ -1,16 +1,13 @@
-// Generated from /Users/pqc/idea/regex_analyse/src/main/java/cn.ac.ios/PCRE/PCRE.g4 by ANTLR 4.9.1
-package cn.ac.ios.PCRE;
+// Generated from /Users/pqc/idea/regex_analyse/src/main/java/cn.ac.ios/PCRE/REGEX.g4 by ANTLR 4.9.1
+package cn.ac.ios.REGEX;
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
-import org.antlr.v4.runtime.Token;
-import org.antlr.v4.runtime.TokenStream;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
-import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class PCRELexer extends Lexer {
+public class REGEXLexer extends Lexer {
 	static { RuntimeMetaData.checkVersion("4.9.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
@@ -158,13 +155,13 @@ public class PCRELexer extends Lexer {
 	}
 
 
-	public PCRELexer(CharStream input) {
+	public REGEXLexer(CharStream input) {
 		super(input);
 		_interp = new LexerATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
 	@Override
-	public String getGrammarFileName() { return "PCRE.g4"; }
+	public String getGrammarFileName() { return "REGEX.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }

@@ -1,5 +1,5 @@
 // Generated from /Users/pqc/idea/regex_analyse/src/main/java/cn.ac.ios/PCRE/PCRE.g4 by ANTLR 4.9.1
-package cn.ac.ios.PCRE;
+package cn.ac.ios.REGEX;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**

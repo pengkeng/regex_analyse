@@ -2,21 +2,16 @@ package cn.ac.ios.TreeNode;
 
 import cn.ac.ios.Bean.BaseDataBean;
 import cn.ac.ios.Bean.Regexps;
-import cn.ac.ios.PCRE.PCREBuilder;
-import cn.ac.ios.PCRE.PCREParser;
+import cn.ac.ios.REGEX.REGEXBuilder;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import org.antlr.v4.runtime.ParserRuleContext;
-import org.antlr.v4.runtime.tree.ParseTree;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.logging.Logger;
 
 
@@ -90,21 +85,21 @@ public class Utils {
 //                list.add(flag);
 //            }
             try {
-                PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
+                REGEXBuilder.Tree tree = new REGEXBuilder.Tree(regex);
                 tree.traverse();
                 subHashMap = tree.hashMap;
                 list.addAll(tree.arrayList);
             } catch (Exception e) {
                 try {
                     regex = regex.replace("\\\\", "\\");
-                    PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
+                    REGEXBuilder.Tree tree = new REGEXBuilder.Tree(regex);
                     tree.traverse();
                     subHashMap = tree.hashMap;
                     list.addAll(tree.arrayList);
                 } catch (Exception e1) {
                     try {
                         regex = newData.get(i).replace("\\", "\\\\");
-                        PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
+                        REGEXBuilder.Tree tree = new REGEXBuilder.Tree(regex);
                         tree.traverse();
                         subHashMap = tree.hashMap;
                         list.addAll(tree.arrayList);
@@ -167,7 +162,7 @@ public class Utils {
 //            int n = 0;
             Logger.getGlobal().info(i + "   -->>:" + regex);
             try {
-                PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
+                REGEXBuilder.Tree tree = new REGEXBuilder.Tree(regex);
 //                    int[] ints = tree.getNestAndStar();
 //                    count = ints[0];
 //                    starHeight = ints[1];
@@ -175,7 +170,7 @@ public class Utils {
             } catch (Exception e) {
                 try {
                     regex = regex.replace("\\\\", "\\");
-                    PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
+                    REGEXBuilder.Tree tree = new REGEXBuilder.Tree(regex);
 //                    int[] ints = tree.getNestAndStar();
 //                    count = ints[0];
 //                    starHeight = ints[1];
@@ -183,7 +178,7 @@ public class Utils {
                 } catch (Exception e1) {
                     try {
                         regex = data.get(i).replace("\\", "\\\\");
-                        PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
+                        REGEXBuilder.Tree tree = new REGEXBuilder.Tree(regex);
 //                        n = tree.getQuantifier();
                         count = tree.getNest();
 //                        starHeight = ints[1];
@@ -210,7 +205,7 @@ public class Utils {
         String regex = "/\\w+?b{2,3}[[0-9]&&\\d0-9&&\\w1-3](a++)\\1/i";
 //        regex = "/abc/i";
         regex = "^[^abc\\112]((?=(abc))|abc|\\da[abc0-9]+)+(?=((a+)+|b)+)+\\12";
-        PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
+        REGEXBuilder.Tree tree = new REGEXBuilder.Tree(regex);
         System.out.println(tree.toStringASCII());
         tree.traverse();
         HashMap<String, ArrayList<ParserRuleContext>> hashMap = tree.hashMap;

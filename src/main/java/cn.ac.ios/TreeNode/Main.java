@@ -1,24 +1,13 @@
 package cn.ac.ios.TreeNode;
 
-import cn.ac.ios.Bean.BaseDataBean;
-import cn.ac.ios.Bean.Regexps;
-import cn.ac.ios.PCRE.PCREBuilder;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-import org.antlr.v4.runtime.ParserRuleContext;
+import cn.ac.ios.REGEX.REGEXBuilder;
 import org.apache.commons.io.FileUtils;
 
-import javax.inject.Qualifier;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Locale;
-import java.util.logging.Logger;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.regex.PatternSyntaxException;
 
 public class Main {
 
@@ -243,7 +232,7 @@ public class Main {
 //        regex = "\\\\u([0-9a-f]{4}+)";
         regex = "((?>(?:a+))a+?aa?+)++";
 //        regex = "";
-        PCREBuilder.Tree tree = new PCREBuilder.Tree(regex);
+        REGEXBuilder.Tree tree = new REGEXBuilder.Tree(regex);
         System.out.println(tree.toStringASCII());
         int a = tree.getNest();
         System.out.println(a);

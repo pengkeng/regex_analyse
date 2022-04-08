@@ -1,4 +1,4 @@
-package cn.ac.ios.PCRE;
+package cn.ac.ios.REGEX;
 
 import org.antlr.v4.runtime.ANTLRErrorListener;
 import org.antlr.v4.runtime.ANTLRInputStream;
@@ -10,24 +10,24 @@ import org.antlr.v4.runtime.tree.ParseTreeWalker;
 import java.util.*;
 
 
-public final class PCREBuilder {
+public final class REGEXBuilder {
 
     private static final DescriptiveBailErrorListener ERROR_LISTENER = new DescriptiveBailErrorListener();
 
     // No need to instantiate this class.
-    private PCREBuilder() {
+    private REGEXBuilder() {
     }
 
     public static final class Lexer {
 
-        private PCRELexer lexer;
+        private REGEXLexer lexer;
 
         public Lexer(String input) {
             this(new ANTLRInputStream(input));
         }
 
         public Lexer(ANTLRInputStream input) {
-            this.lexer = new PCRELexer(input);
+            this.lexer = new REGEXLexer(input);
             this.lexer.removeErrorListeners();
             this.lexer.addErrorListener(ERROR_LISTENER);
         }
@@ -38,30 +38,30 @@ public final class PCREBuilder {
             return this;
         }
 
-        public PCRELexer build() {
+        public REGEXLexer build() {
             return this.lexer;
         }
     }
 
     public static final class Parser {
 
-        private PCREParser parser;
+        private REGEXParser parser;
 
         public Parser(String input) {
             this(new ANTLRInputStream(input));
         }
 
         public Parser(ANTLRInputStream input) {
-            PCRELexer lexer = new PCRELexer(input);
+            REGEXLexer lexer = new REGEXLexer(input);
             lexer.removeErrorListeners();
             lexer.addErrorListener(ERROR_LISTENER);
-            this.parser = new PCREParser(new CommonTokenStream(lexer));
+            this.parser = new REGEXParser(new CommonTokenStream(lexer));
             this.parser.removeErrorListeners();
             this.parser.addErrorListener(ERROR_LISTENER);
         }
 
-        public Parser(PCRELexer lexer) {
-            this.parser = new PCREParser(new CommonTokenStream(lexer));
+        public Parser(REGEXLexer lexer) {
+            this.parser = new REGEXParser(new CommonTokenStream(lexer));
             this.parser.removeErrorListeners();
             this.parser.addErrorListener(ERROR_LISTENER);
         }
@@ -72,7 +72,7 @@ public final class PCREBuilder {
             return this;
         }
 
-        public PCREParser build() {
+        public REGEXParser build() {
             return this.parser;
         }
     }
@@ -89,7 +89,7 @@ public final class PCREBuilder {
 
         public String toStringASCII() {
 
-            PCREParser parser = new Parser(input).build();
+            REGEXParser parser = new Parser(input).build();
             ParseTree tree = parser.parse();
             StringBuilder builder = new StringBuilder();
             walk(tree, builder);
@@ -139,35 +139,35 @@ public final class PCREBuilder {
         }
 
         public void traverse() {
-            PCREParser parser = new Parser(input).build();
+            REGEXParser parser = new Parser(input).build();
             ParseTree tree = parser.parse();
             ParseTreeWalker walker = new ParseTreeWalker();
-            PCREBaseListener baseListener = new PCREBaseListener();
+            REGEXBaseListener baseListener = new REGEXBaseListener();
             walker.walk(baseListener, tree);
             this.hashMap = baseListener.hashMap;
             this.arrayList = baseListener.arrayList;
         }
 
         public int getNest() {
-            PCREParser parser = new Parser(input).build();
+            REGEXParser parser = new Parser(input).build();
             ParseTree tree = parser.parse();
             return getCount(tree.getChild(0));
         }
 
         public int getStar() {
-            PCREParser parser = new Parser(input).build();
+            REGEXParser parser = new Parser(input).build();
             ParseTree tree = parser.parse();
             return getStarCount(tree.getChild(0));
         }
 
         public int getQuantifier() {
-            PCREParser parser = new Parser(input).build();
+            REGEXParser parser = new Parser(input).build();
             ParseTree tree = parser.parse();
             return getQuantifierCount(tree.getChild(0));
         }
 
         public int[] getNestAndStar() {
-            PCREParser parser = new Parser(input).build();
+            REGEXParser parser = new Parser(input).build();
             ParseTree tree = parser.parse();
             int[] ints = new int[2];
             ints[0] = getCount(tree.getChild(0));
@@ -180,9 +180,9 @@ public final class PCREBuilder {
                 return 0;
             } else if (tree.getChildCount() == 1) {
                 return getCount(tree.getChild(0));
-            } else if (tree instanceof PCREParser.CaptureContext && tree.getChildCount() == 3) {
+            } else if (tree instanceof REGEXParser.CaptureContext && tree.getChildCount() == 3) {
                 return 1 + getCount(tree.getChild(tree.getChildCount() - 2));
-            } else if (tree instanceof PCREParser.Name_caturpeContext || tree instanceof PCREParser.Base_non_captureContext || tree instanceof PCREParser.Reset_non_captureContext || tree instanceof PCREParser.Atomic_non_captureContext) {
+            } else if (tree instanceof REGEXParser.Name_caturpeContext || tree instanceof REGEXParser.Base_non_captureContext || tree instanceof REGEXParser.Reset_non_captureContext || tree instanceof REGEXParser.Atomic_non_captureContext) {
                 return 1 + getCount(tree.getChild(tree.getChildCount() - 2));
             } else {
                 int max = 0;
@@ -198,10 +198,10 @@ public final class PCREBuilder {
                 return 0;
             } else if (tree.getChildCount() == 1) {
                 return getStarCount(tree.getChild(0));
-            } else if (tree instanceof PCREParser.ElementContext) {
+            } else if (tree instanceof REGEXParser.ElementContext) {
                 if (tree.getChildCount() == 2 &&
-                        tree.getChild(0) instanceof PCREParser.AtomContext &&
-                        tree.getChild(1) instanceof PCREParser.QuantifierContext &&
+                        tree.getChild(0) instanceof REGEXParser.AtomContext &&
+                        tree.getChild(1) instanceof REGEXParser.QuantifierContext &&
                         tree.getChild(1).getText().contains("*")) {
                     return getStarCount(tree.getChild(0)) + 1;
                 } else {
@@ -222,10 +222,10 @@ public final class PCREBuilder {
                 return 0;
             } else if (tree.getChildCount() == 1) {
                 return getQuantifierCount(tree.getChild(0));
-            } else if (tree instanceof PCREParser.ElementContext) {
+            } else if (tree instanceof REGEXParser.ElementContext) {
                 if (tree.getChildCount() == 2 &&
-                        tree.getChild(0) instanceof PCREParser.AtomContext &&
-                        tree.getChild(1) instanceof PCREParser.QuantifierContext) {
+                        tree.getChild(0) instanceof REGEXParser.AtomContext &&
+                        tree.getChild(1) instanceof REGEXParser.QuantifierContext) {
                     return getQuantifierCount(tree.getChild(0)) + 1;
                 } else {
                     return getQuantifierCount(tree.getChild(0));

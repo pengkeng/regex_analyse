@@ -27,11 +27,14 @@
  * Project      : PCRE Parser, an ANTLR 4 grammar for PCRE
  * Developed by : Bart Kiers, bart@big-o.nl
  */
-grammar PCRE;
+grammar REGEX;
 
 // Most single line comments above the lexer- and  parser rules 
 // are copied from the official PCRE man pages (last updated: 
 // 10 January 2012): http://www.pcre.org/pcre.txt
+
+//modified by pqc
+
 parse
  : alternation EOF
  | global_option_pattern expr alternation global_option_pattern global_option_flags?

@@ -1,16 +1,13 @@
-// Generated from /Users/pqc/idea/regex_analyse/src/main/java/cn.ac.ios/PCRE/PCRE.g4 by ANTLR 4.9.1
+// Generated from /Users/pqc/idea/regex_analyse/src/main/java/cn.ac.ios/PCRE/REGEX.g4 by ANTLR 4.9.1
 package cn.ac.ios.REGEX;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
-import org.antlr.v4.runtime.misc.*;
 import org.antlr.v4.runtime.tree.*;
 import java.util.List;
-import java.util.Iterator;
-import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class PCREParser extends Parser {
+public class REGEXParser extends Parser {
 	static { RuntimeMetaData.checkVersion("4.9.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
@@ -163,7 +160,7 @@ public class PCREParser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "PCRE.g4"; }
+	public String getGrammarFileName() { return "REGEX.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -174,7 +171,7 @@ public class PCREParser extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public PCREParser(TokenStream input) {
+	public REGEXParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
@@ -183,7 +180,7 @@ public class PCREParser extends Parser {
 		public AlternationContext alternation() {
 			return getRuleContext(AlternationContext.class,0);
 		}
-		public TerminalNode EOF() { return getToken(PCREParser.EOF, 0); }
+		public TerminalNode EOF() { return getToken(REGEXParser.EOF, 0); }
 		public List<Global_option_patternContext> global_option_pattern() {
 			return getRuleContexts(Global_option_patternContext.class);
 		}
@@ -202,15 +199,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_parse; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterParse(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterParse(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitParse(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitParse(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitParse(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitParse(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -269,32 +266,32 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Global_option_patternContext extends ParserRuleContext {
-		public TerminalNode Slash() { return getToken(PCREParser.Slash, 0); }
-		public TerminalNode Wave() { return getToken(PCREParser.Wave, 0); }
-		public TerminalNode DoubleQuote() { return getToken(PCREParser.DoubleQuote, 0); }
-		public TerminalNode SingleQuote() { return getToken(PCREParser.SingleQuote, 0); }
-		public TerminalNode Mail() { return getToken(PCREParser.Mail, 0); }
-		public TerminalNode Hash() { return getToken(PCREParser.Hash, 0); }
-		public TerminalNode Percent() { return getToken(PCREParser.Percent, 0); }
-		public TerminalNode Backquote() { return getToken(PCREParser.Backquote, 0); }
-		public TerminalNode Semicolon() { return getToken(PCREParser.Semicolon, 0); }
-		public TerminalNode Exclamation() { return getToken(PCREParser.Exclamation, 0); }
-		public TerminalNode Pipe() { return getToken(PCREParser.Pipe, 0); }
+		public TerminalNode Slash() { return getToken(REGEXParser.Slash, 0); }
+		public TerminalNode Wave() { return getToken(REGEXParser.Wave, 0); }
+		public TerminalNode DoubleQuote() { return getToken(REGEXParser.DoubleQuote, 0); }
+		public TerminalNode SingleQuote() { return getToken(REGEXParser.SingleQuote, 0); }
+		public TerminalNode Mail() { return getToken(REGEXParser.Mail, 0); }
+		public TerminalNode Hash() { return getToken(REGEXParser.Hash, 0); }
+		public TerminalNode Percent() { return getToken(REGEXParser.Percent, 0); }
+		public TerminalNode Backquote() { return getToken(REGEXParser.Backquote, 0); }
+		public TerminalNode Semicolon() { return getToken(REGEXParser.Semicolon, 0); }
+		public TerminalNode Exclamation() { return getToken(REGEXParser.Exclamation, 0); }
+		public TerminalNode Pipe() { return getToken(REGEXParser.Pipe, 0); }
 		public Global_option_patternContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_global_option_pattern; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterGlobal_option_pattern(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterGlobal_option_pattern(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitGlobal_option_pattern(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitGlobal_option_pattern(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitGlobal_option_pattern(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitGlobal_option_pattern(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -336,9 +333,9 @@ public class PCREParser extends Parser {
 		public ExprContext expr(int i) {
 			return getRuleContext(ExprContext.class,i);
 		}
-		public List<TerminalNode> Pipe() { return getTokens(PCREParser.Pipe); }
+		public List<TerminalNode> Pipe() { return getTokens(REGEXParser.Pipe); }
 		public TerminalNode Pipe(int i) {
-			return getToken(PCREParser.Pipe, i);
+			return getToken(REGEXParser.Pipe, i);
 		}
 		public AlternationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -346,15 +343,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_alternation; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterAlternation(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterAlternation(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitAlternation(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitAlternation(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitAlternation(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitAlternation(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -371,7 +368,7 @@ public class PCREParser extends Parser {
 			setState(149);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,2,_ctx);
-			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -412,15 +409,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_expr; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterExpr(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterExpr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitExpr(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitExpr(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitExpr(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitExpr(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -435,7 +432,7 @@ public class PCREParser extends Parser {
 			setState(155);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,3,_ctx);
-			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -474,15 +471,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_element; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterElement(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterElement(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitElement(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitElement(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitElement(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitElement(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -534,15 +531,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_quantifier; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterQuantifier(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterQuantifier(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitQuantifier(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitQuantifier(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitQuantifier(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitQuantifier(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -607,15 +604,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_quantifier_greedy; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterQuantifier_greedy(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterQuantifier_greedy(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitQuantifier_greedy(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitQuantifier_greedy(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitQuantifier_greedy(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitQuantifier_greedy(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -674,7 +671,7 @@ public class PCREParser extends Parser {
 		public Quantifier_KleeneContext quantifier_Kleene() {
 			return getRuleContext(Quantifier_KleeneContext.class,0);
 		}
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
 		public Quantifier_addContext quantifier_add() {
 			return getRuleContext(Quantifier_addContext.class,0);
 		}
@@ -690,15 +687,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_quantifier_lazy; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterQuantifier_lazy(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterQuantifier_lazy(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitQuantifier_lazy(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitQuantifier_lazy(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitQuantifier_lazy(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitQuantifier_lazy(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -765,7 +762,7 @@ public class PCREParser extends Parser {
 		public Quantifier_KleeneContext quantifier_Kleene() {
 			return getRuleContext(Quantifier_KleeneContext.class,0);
 		}
-		public TerminalNode Plus() { return getToken(PCREParser.Plus, 0); }
+		public TerminalNode Plus() { return getToken(REGEXParser.Plus, 0); }
 		public Quantifier_addContext quantifier_add() {
 			return getRuleContext(Quantifier_addContext.class,0);
 		}
@@ -781,15 +778,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_quantifier_possesstive; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterQuantifier_possesstive(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterQuantifier_possesstive(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitQuantifier_possesstive(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitQuantifier_possesstive(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitQuantifier_possesstive(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitQuantifier_possesstive(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -853,22 +850,22 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Quantifier_KleeneContext extends ParserRuleContext {
-		public TerminalNode Star() { return getToken(PCREParser.Star, 0); }
+		public TerminalNode Star() { return getToken(REGEXParser.Star, 0); }
 		public Quantifier_KleeneContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_quantifier_Kleene; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterQuantifier_Kleene(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterQuantifier_Kleene(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitQuantifier_Kleene(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitQuantifier_Kleene(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitQuantifier_Kleene(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitQuantifier_Kleene(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -895,22 +892,22 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Quantifier_addContext extends ParserRuleContext {
-		public TerminalNode Plus() { return getToken(PCREParser.Plus, 0); }
+		public TerminalNode Plus() { return getToken(REGEXParser.Plus, 0); }
 		public Quantifier_addContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_quantifier_add; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterQuantifier_add(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterQuantifier_add(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitQuantifier_add(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitQuantifier_add(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitQuantifier_add(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitQuantifier_add(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -937,22 +934,22 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Quantifier_optionContext extends ParserRuleContext {
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
 		public Quantifier_optionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_quantifier_option; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterQuantifier_option(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterQuantifier_option(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitQuantifier_option(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitQuantifier_option(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitQuantifier_option(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitQuantifier_option(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -979,30 +976,30 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Quantifier_rangeContext extends ParserRuleContext {
-		public TerminalNode OpenBrace() { return getToken(PCREParser.OpenBrace, 0); }
+		public TerminalNode OpenBrace() { return getToken(REGEXParser.OpenBrace, 0); }
 		public List<NumberContext> number() {
 			return getRuleContexts(NumberContext.class);
 		}
 		public NumberContext number(int i) {
 			return getRuleContext(NumberContext.class,i);
 		}
-		public TerminalNode CloseBrace() { return getToken(PCREParser.CloseBrace, 0); }
-		public TerminalNode Comma() { return getToken(PCREParser.Comma, 0); }
+		public TerminalNode CloseBrace() { return getToken(REGEXParser.CloseBrace, 0); }
+		public TerminalNode Comma() { return getToken(REGEXParser.Comma, 0); }
 		public Quantifier_rangeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_quantifier_range; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterQuantifier_range(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterQuantifier_range(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitQuantifier_range(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitQuantifier_range(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitQuantifier_range(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitQuantifier_range(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1070,12 +1067,12 @@ public class PCREParser extends Parser {
 		public Negative_character_classContext negative_character_class() {
 			return getRuleContext(Negative_character_classContext.class,0);
 		}
-		public TerminalNode CharacterClassStart() { return getToken(PCREParser.CharacterClassStart, 0); }
-		public List<TerminalNode> CharacterClassEnd() { return getTokens(PCREParser.CharacterClassEnd); }
+		public TerminalNode CharacterClassStart() { return getToken(REGEXParser.CharacterClassStart, 0); }
+		public List<TerminalNode> CharacterClassEnd() { return getTokens(REGEXParser.CharacterClassEnd); }
 		public TerminalNode CharacterClassEnd(int i) {
-			return getToken(PCREParser.CharacterClassEnd, i);
+			return getToken(REGEXParser.CharacterClassEnd, i);
 		}
-		public TerminalNode Hyphen() { return getToken(PCREParser.Hyphen, 0); }
+		public TerminalNode Hyphen() { return getToken(REGEXParser.Hyphen, 0); }
 		public List<Character_class_intersectionContext> character_class_intersection() {
 			return getRuleContexts(Character_class_intersectionContext.class);
 		}
@@ -1094,15 +1091,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_character_class; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterCharacter_class(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterCharacter_class(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitCharacter_class(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitCharacter_class(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitCharacter_class(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitCharacter_class(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1286,13 +1283,13 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Negative_character_classContext extends ParserRuleContext {
-		public TerminalNode CharacterClassStart() { return getToken(PCREParser.CharacterClassStart, 0); }
-		public TerminalNode Caret() { return getToken(PCREParser.Caret, 0); }
-		public List<TerminalNode> CharacterClassEnd() { return getTokens(PCREParser.CharacterClassEnd); }
+		public TerminalNode CharacterClassStart() { return getToken(REGEXParser.CharacterClassStart, 0); }
+		public TerminalNode Caret() { return getToken(REGEXParser.Caret, 0); }
+		public List<TerminalNode> CharacterClassEnd() { return getTokens(REGEXParser.CharacterClassEnd); }
 		public TerminalNode CharacterClassEnd(int i) {
-			return getToken(PCREParser.CharacterClassEnd, i);
+			return getToken(REGEXParser.CharacterClassEnd, i);
 		}
-		public TerminalNode Hyphen() { return getToken(PCREParser.Hyphen, 0); }
+		public TerminalNode Hyphen() { return getToken(REGEXParser.Hyphen, 0); }
 		public List<Character_class_intersectionContext> character_class_intersection() {
 			return getRuleContexts(Character_class_intersectionContext.class);
 		}
@@ -1311,15 +1308,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_negative_character_class; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterNegative_character_class(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterNegative_character_class(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitNegative_character_class(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitNegative_character_class(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitNegative_character_class(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitNegative_character_class(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1514,9 +1511,9 @@ public class PCREParser extends Parser {
 		public Cc_atomContext cc_atom(int i) {
 			return getRuleContext(Cc_atomContext.class,i);
 		}
-		public List<TerminalNode> Ampersand() { return getTokens(PCREParser.Ampersand); }
+		public List<TerminalNode> Ampersand() { return getTokens(REGEXParser.Ampersand); }
 		public TerminalNode Ampersand(int i) {
-			return getToken(PCREParser.Ampersand, i);
+			return getToken(REGEXParser.Ampersand, i);
 		}
 		public Character_class_intersectionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1524,15 +1521,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_character_class_intersection; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterCharacter_class_intersection(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterCharacter_class_intersection(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitCharacter_class_intersection(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitCharacter_class_intersection(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitCharacter_class_intersection(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitCharacter_class_intersection(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1563,7 +1560,7 @@ public class PCREParser extends Parser {
 				setState(346); 
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,24,_ctx);
-			} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
+			} while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER );
 			setState(355); 
 			_errHandler.sync(this);
 			_alt = 1;
@@ -1595,7 +1592,7 @@ public class PCREParser extends Parser {
 						setState(353); 
 						_errHandler.sync(this);
 						_alt = getInterpreter().adaptivePredict(_input,25,_ctx);
-					} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
+					} while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER );
 					}
 					}
 					break;
@@ -1605,7 +1602,7 @@ public class PCREParser extends Parser {
 				setState(357); 
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,26,_ctx);
-			} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
+			} while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER );
 			}
 		}
 		catch (RecognitionException re) {
@@ -1635,15 +1632,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_backreference; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterBackreference(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterBackreference(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitBackreference(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitBackreference(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitBackreference(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitBackreference(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1690,28 +1687,28 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Backreference_or_indexContext extends ParserRuleContext {
-		public TerminalNode SubroutineOrNamedReferenceStartG() { return getToken(PCREParser.SubroutineOrNamedReferenceStartG, 0); }
+		public TerminalNode SubroutineOrNamedReferenceStartG() { return getToken(REGEXParser.SubroutineOrNamedReferenceStartG, 0); }
 		public NumberContext number() {
 			return getRuleContext(NumberContext.class,0);
 		}
-		public TerminalNode OpenBrace() { return getToken(PCREParser.OpenBrace, 0); }
-		public TerminalNode CloseBrace() { return getToken(PCREParser.CloseBrace, 0); }
-		public TerminalNode Hyphen() { return getToken(PCREParser.Hyphen, 0); }
+		public TerminalNode OpenBrace() { return getToken(REGEXParser.OpenBrace, 0); }
+		public TerminalNode CloseBrace() { return getToken(REGEXParser.CloseBrace, 0); }
+		public TerminalNode Hyphen() { return getToken(REGEXParser.Hyphen, 0); }
 		public Backreference_or_indexContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_backreference_or_index; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterBackreference_or_index(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterBackreference_or_index(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitBackreference_or_index(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitBackreference_or_index(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitBackreference_or_index(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitBackreference_or_index(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1774,39 +1771,39 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Backreference_or_nameContext extends ParserRuleContext {
-		public TerminalNode NamedReferenceStartK() { return getToken(PCREParser.NamedReferenceStartK, 0); }
-		public TerminalNode LessThan() { return getToken(PCREParser.LessThan, 0); }
+		public TerminalNode NamedReferenceStartK() { return getToken(REGEXParser.NamedReferenceStartK, 0); }
+		public TerminalNode LessThan() { return getToken(REGEXParser.LessThan, 0); }
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
-		public TerminalNode GreaterThan() { return getToken(PCREParser.GreaterThan, 0); }
-		public List<TerminalNode> SingleQuote() { return getTokens(PCREParser.SingleQuote); }
+		public TerminalNode GreaterThan() { return getToken(REGEXParser.GreaterThan, 0); }
+		public List<TerminalNode> SingleQuote() { return getTokens(REGEXParser.SingleQuote); }
 		public TerminalNode SingleQuote(int i) {
-			return getToken(PCREParser.SingleQuote, i);
+			return getToken(REGEXParser.SingleQuote, i);
 		}
-		public TerminalNode SubroutineOrNamedReferenceStartG() { return getToken(PCREParser.SubroutineOrNamedReferenceStartG, 0); }
-		public TerminalNode OpenBrace() { return getToken(PCREParser.OpenBrace, 0); }
-		public TerminalNode CloseBrace() { return getToken(PCREParser.CloseBrace, 0); }
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
-		public TerminalNode PUC() { return getToken(PCREParser.PUC, 0); }
-		public TerminalNode Equals() { return getToken(PCREParser.Equals, 0); }
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
+		public TerminalNode SubroutineOrNamedReferenceStartG() { return getToken(REGEXParser.SubroutineOrNamedReferenceStartG, 0); }
+		public TerminalNode OpenBrace() { return getToken(REGEXParser.OpenBrace, 0); }
+		public TerminalNode CloseBrace() { return getToken(REGEXParser.CloseBrace, 0); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
+		public TerminalNode PUC() { return getToken(REGEXParser.PUC, 0); }
+		public TerminalNode Equals() { return getToken(REGEXParser.Equals, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
 		public Backreference_or_nameContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_backreference_or_name; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterBackreference_or_name(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterBackreference_or_name(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitBackreference_or_name(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitBackreference_or_name(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitBackreference_or_name(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitBackreference_or_name(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1904,7 +1901,7 @@ public class PCREParser extends Parser {
 		public Octal_charContext octal_char() {
 			return getRuleContext(Octal_charContext.class,0);
 		}
-		public TerminalNode Backslash() { return getToken(PCREParser.Backslash, 0); }
+		public TerminalNode Backslash() { return getToken(REGEXParser.Backslash, 0); }
 		public DigitContext digit() {
 			return getRuleContext(DigitContext.class,0);
 		}
@@ -1914,15 +1911,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_backreference_or_octal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterBackreference_or_octal(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterBackreference_or_octal(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitBackreference_or_octal(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitBackreference_or_octal(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitBackreference_or_octal(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitBackreference_or_octal(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1967,7 +1964,7 @@ public class PCREParser extends Parser {
 		public Octal_charContext octal_char() {
 			return getRuleContext(Octal_charContext.class,0);
 		}
-		public TerminalNode Backslash() { return getToken(PCREParser.Backslash, 0); }
+		public TerminalNode Backslash() { return getToken(REGEXParser.Backslash, 0); }
 		public DigitContext digit() {
 			return getRuleContext(DigitContext.class,0);
 		}
@@ -1977,15 +1974,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_character_octal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterCharacter_octal(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterCharacter_octal(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitCharacter_octal(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitCharacter_octal(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitCharacter_octal(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitCharacter_octal(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2030,26 +2027,26 @@ public class PCREParser extends Parser {
 		public Name_caturpeContext name_caturpe() {
 			return getRuleContext(Name_caturpeContext.class,0);
 		}
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
 		public AlternationContext alternation() {
 			return getRuleContext(AlternationContext.class,0);
 		}
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
 		public CaptureContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_capture; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterCapture(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterCapture(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitCapture(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitCapture(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitCapture(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitCapture(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2093,38 +2090,38 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Name_caturpeContext extends ParserRuleContext {
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
-		public TerminalNode LessThan() { return getToken(PCREParser.LessThan, 0); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
+		public TerminalNode LessThan() { return getToken(REGEXParser.LessThan, 0); }
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
-		public TerminalNode GreaterThan() { return getToken(PCREParser.GreaterThan, 0); }
+		public TerminalNode GreaterThan() { return getToken(REGEXParser.GreaterThan, 0); }
 		public AlternationContext alternation() {
 			return getRuleContext(AlternationContext.class,0);
 		}
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
-		public TerminalNode Hyphen() { return getToken(PCREParser.Hyphen, 0); }
-		public List<TerminalNode> SingleQuote() { return getTokens(PCREParser.SingleQuote); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
+		public TerminalNode Hyphen() { return getToken(REGEXParser.Hyphen, 0); }
+		public List<TerminalNode> SingleQuote() { return getTokens(REGEXParser.SingleQuote); }
 		public TerminalNode SingleQuote(int i) {
-			return getToken(PCREParser.SingleQuote, i);
+			return getToken(REGEXParser.SingleQuote, i);
 		}
-		public TerminalNode PUC() { return getToken(PCREParser.PUC, 0); }
+		public TerminalNode PUC() { return getToken(REGEXParser.PUC, 0); }
 		public Name_caturpeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_name_caturpe; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterName_caturpe(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterName_caturpe(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitName_caturpe(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitName_caturpe(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitName_caturpe(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitName_caturpe(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2235,15 +2232,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_non_capture; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterNon_capture(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterNon_capture(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitNon_capture(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitNon_capture(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitNon_capture(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitNon_capture(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2290,28 +2287,28 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Atomic_non_captureContext extends ParserRuleContext {
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
-		public TerminalNode GreaterThan() { return getToken(PCREParser.GreaterThan, 0); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
+		public TerminalNode GreaterThan() { return getToken(REGEXParser.GreaterThan, 0); }
 		public AlternationContext alternation() {
 			return getRuleContext(AlternationContext.class,0);
 		}
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
 		public Atomic_non_captureContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_atomic_non_capture; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterAtomic_non_capture(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterAtomic_non_capture(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitAtomic_non_capture(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitAtomic_non_capture(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitAtomic_non_capture(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitAtomic_non_capture(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2346,28 +2343,28 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Reset_non_captureContext extends ParserRuleContext {
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
-		public TerminalNode Pipe() { return getToken(PCREParser.Pipe, 0); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
+		public TerminalNode Pipe() { return getToken(REGEXParser.Pipe, 0); }
 		public AlternationContext alternation() {
 			return getRuleContext(AlternationContext.class,0);
 		}
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
 		public Reset_non_captureContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_reset_non_capture; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterReset_non_capture(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterReset_non_capture(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitReset_non_capture(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitReset_non_capture(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitReset_non_capture(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitReset_non_capture(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2402,28 +2399,28 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Base_non_captureContext extends ParserRuleContext {
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
-		public TerminalNode Colon() { return getToken(PCREParser.Colon, 0); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
+		public TerminalNode Colon() { return getToken(REGEXParser.Colon, 0); }
 		public AlternationContext alternation() {
 			return getRuleContext(AlternationContext.class,0);
 		}
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
 		public Base_non_captureContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_base_non_capture; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterBase_non_capture(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterBase_non_capture(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitBase_non_capture(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitBase_non_capture(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitBase_non_capture(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitBase_non_capture(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2458,28 +2455,28 @@ public class PCREParser extends Parser {
 	}
 
 	public static class CommentContext extends ParserRuleContext {
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
-		public TerminalNode Hash() { return getToken(PCREParser.Hash, 0); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
+		public TerminalNode Hash() { return getToken(REGEXParser.Hash, 0); }
 		public Non_close_parensContext non_close_parens() {
 			return getRuleContext(Non_close_parensContext.class,0);
 		}
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
 		public CommentContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_comment; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterComment(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterComment(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitComment(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitComment(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitComment(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitComment(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2514,59 +2511,59 @@ public class PCREParser extends Parser {
 	}
 
 	public static class OptionContext extends ParserRuleContext {
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
 		public List<Option_flagsContext> option_flags() {
 			return getRuleContexts(Option_flagsContext.class);
 		}
 		public Option_flagsContext option_flags(int i) {
 			return getRuleContext(Option_flagsContext.class,i);
 		}
-		public TerminalNode Hyphen() { return getToken(PCREParser.Hyphen, 0); }
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
-		public TerminalNode Colon() { return getToken(PCREParser.Colon, 0); }
+		public TerminalNode Hyphen() { return getToken(REGEXParser.Hyphen, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
+		public TerminalNode Colon() { return getToken(REGEXParser.Colon, 0); }
 		public AlternationContext alternation() {
 			return getRuleContext(AlternationContext.class,0);
 		}
-		public TerminalNode Star() { return getToken(PCREParser.Star, 0); }
-		public TerminalNode NUC() { return getToken(PCREParser.NUC, 0); }
-		public List<TerminalNode> OUC() { return getTokens(PCREParser.OUC); }
+		public TerminalNode Star() { return getToken(REGEXParser.Star, 0); }
+		public TerminalNode NUC() { return getToken(REGEXParser.NUC, 0); }
+		public List<TerminalNode> OUC() { return getTokens(REGEXParser.OUC); }
 		public TerminalNode OUC(int i) {
-			return getToken(PCREParser.OUC, i);
+			return getToken(REGEXParser.OUC, i);
 		}
-		public List<TerminalNode> Underscore() { return getTokens(PCREParser.Underscore); }
+		public List<TerminalNode> Underscore() { return getTokens(REGEXParser.Underscore); }
 		public TerminalNode Underscore(int i) {
-			return getToken(PCREParser.Underscore, i);
+			return getToken(REGEXParser.Underscore, i);
 		}
-		public TerminalNode SUC() { return getToken(PCREParser.SUC, 0); }
-		public List<TerminalNode> TUC() { return getTokens(PCREParser.TUC); }
+		public TerminalNode SUC() { return getToken(REGEXParser.SUC, 0); }
+		public List<TerminalNode> TUC() { return getTokens(REGEXParser.TUC); }
 		public TerminalNode TUC(int i) {
-			return getToken(PCREParser.TUC, i);
+			return getToken(REGEXParser.TUC, i);
 		}
-		public TerminalNode AUC() { return getToken(PCREParser.AUC, 0); }
-		public TerminalNode RUC() { return getToken(PCREParser.RUC, 0); }
-		public TerminalNode PUC() { return getToken(PCREParser.PUC, 0); }
-		public TerminalNode UUC() { return getToken(PCREParser.UUC, 0); }
-		public TerminalNode FUC() { return getToken(PCREParser.FUC, 0); }
-		public TerminalNode D8() { return getToken(PCREParser.D8, 0); }
-		public TerminalNode D1() { return getToken(PCREParser.D1, 0); }
-		public TerminalNode D6() { return getToken(PCREParser.D6, 0); }
-		public TerminalNode CUC() { return getToken(PCREParser.CUC, 0); }
+		public TerminalNode AUC() { return getToken(REGEXParser.AUC, 0); }
+		public TerminalNode RUC() { return getToken(REGEXParser.RUC, 0); }
+		public TerminalNode PUC() { return getToken(REGEXParser.PUC, 0); }
+		public TerminalNode UUC() { return getToken(REGEXParser.UUC, 0); }
+		public TerminalNode FUC() { return getToken(REGEXParser.FUC, 0); }
+		public TerminalNode D8() { return getToken(REGEXParser.D8, 0); }
+		public TerminalNode D1() { return getToken(REGEXParser.D1, 0); }
+		public TerminalNode D6() { return getToken(REGEXParser.D6, 0); }
+		public TerminalNode CUC() { return getToken(REGEXParser.CUC, 0); }
 		public OptionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_option; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterOption(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterOption(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitOption(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitOption(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitOption(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitOption(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2777,15 +2774,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_option_flags; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterOption_flags(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterOption_flags(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitOption_flags(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitOption_flags(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitOption_flags(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitOption_flags(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2825,29 +2822,29 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Option_flagContext extends ParserRuleContext {
-		public TerminalNode ILC() { return getToken(PCREParser.ILC, 0); }
-		public TerminalNode JUC() { return getToken(PCREParser.JUC, 0); }
-		public TerminalNode MLC() { return getToken(PCREParser.MLC, 0); }
-		public TerminalNode SLC() { return getToken(PCREParser.SLC, 0); }
-		public TerminalNode UUC() { return getToken(PCREParser.UUC, 0); }
-		public TerminalNode XLC() { return getToken(PCREParser.XLC, 0); }
-		public TerminalNode ULC() { return getToken(PCREParser.ULC, 0); }
-		public TerminalNode NLC() { return getToken(PCREParser.NLC, 0); }
+		public TerminalNode ILC() { return getToken(REGEXParser.ILC, 0); }
+		public TerminalNode JUC() { return getToken(REGEXParser.JUC, 0); }
+		public TerminalNode MLC() { return getToken(REGEXParser.MLC, 0); }
+		public TerminalNode SLC() { return getToken(REGEXParser.SLC, 0); }
+		public TerminalNode UUC() { return getToken(REGEXParser.UUC, 0); }
+		public TerminalNode XLC() { return getToken(REGEXParser.XLC, 0); }
+		public TerminalNode ULC() { return getToken(REGEXParser.ULC, 0); }
+		public TerminalNode NLC() { return getToken(REGEXParser.NLC, 0); }
 		public Option_flagContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_option_flag; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterOption_flag(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterOption_flag(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitOption_flag(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitOption_flag(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitOption_flag(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitOption_flag(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2895,15 +2892,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_global_option_flags; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterGlobal_option_flags(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterGlobal_option_flags(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitGlobal_option_flags(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitGlobal_option_flags(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitGlobal_option_flags(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitGlobal_option_flags(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2943,27 +2940,27 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Global_option_flagContext extends ParserRuleContext {
-		public TerminalNode ILC() { return getToken(PCREParser.ILC, 0); }
-		public TerminalNode JUC() { return getToken(PCREParser.JUC, 0); }
-		public TerminalNode MLC() { return getToken(PCREParser.MLC, 0); }
-		public TerminalNode SLC() { return getToken(PCREParser.SLC, 0); }
-		public TerminalNode UUC() { return getToken(PCREParser.UUC, 0); }
-		public TerminalNode XLC() { return getToken(PCREParser.XLC, 0); }
+		public TerminalNode ILC() { return getToken(REGEXParser.ILC, 0); }
+		public TerminalNode JUC() { return getToken(REGEXParser.JUC, 0); }
+		public TerminalNode MLC() { return getToken(REGEXParser.MLC, 0); }
+		public TerminalNode SLC() { return getToken(REGEXParser.SLC, 0); }
+		public TerminalNode UUC() { return getToken(REGEXParser.UUC, 0); }
+		public TerminalNode XLC() { return getToken(REGEXParser.XLC, 0); }
 		public Global_option_flagContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_global_option_flag; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterGlobal_option_flag(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterGlobal_option_flag(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitGlobal_option_flag(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitGlobal_option_flag(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitGlobal_option_flag(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitGlobal_option_flag(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3017,15 +3014,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_look_around; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterLook_around(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterLook_around(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitLook_around(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitLook_around(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitLook_around(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitLook_around(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3079,28 +3076,28 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Look_ahead_positiveContext extends ParserRuleContext {
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
-		public TerminalNode Equals() { return getToken(PCREParser.Equals, 0); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
+		public TerminalNode Equals() { return getToken(REGEXParser.Equals, 0); }
 		public AlternationContext alternation() {
 			return getRuleContext(AlternationContext.class,0);
 		}
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
 		public Look_ahead_positiveContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_look_ahead_positive; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterLook_ahead_positive(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterLook_ahead_positive(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitLook_ahead_positive(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitLook_ahead_positive(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitLook_ahead_positive(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitLook_ahead_positive(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3135,28 +3132,28 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Look_ahead_negativeContext extends ParserRuleContext {
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
-		public TerminalNode Exclamation() { return getToken(PCREParser.Exclamation, 0); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
+		public TerminalNode Exclamation() { return getToken(REGEXParser.Exclamation, 0); }
 		public AlternationContext alternation() {
 			return getRuleContext(AlternationContext.class,0);
 		}
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
 		public Look_ahead_negativeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_look_ahead_negative; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterLook_ahead_negative(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterLook_ahead_negative(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitLook_ahead_negative(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitLook_ahead_negative(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitLook_ahead_negative(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitLook_ahead_negative(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3191,29 +3188,29 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Look_behind_positiveContext extends ParserRuleContext {
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
-		public TerminalNode LessThan() { return getToken(PCREParser.LessThan, 0); }
-		public TerminalNode Equals() { return getToken(PCREParser.Equals, 0); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
+		public TerminalNode LessThan() { return getToken(REGEXParser.LessThan, 0); }
+		public TerminalNode Equals() { return getToken(REGEXParser.Equals, 0); }
 		public AlternationContext alternation() {
 			return getRuleContext(AlternationContext.class,0);
 		}
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
 		public Look_behind_positiveContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_look_behind_positive; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterLook_behind_positive(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterLook_behind_positive(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitLook_behind_positive(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitLook_behind_positive(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitLook_behind_positive(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitLook_behind_positive(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3250,29 +3247,29 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Look_behind_negativeContext extends ParserRuleContext {
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
-		public TerminalNode LessThan() { return getToken(PCREParser.LessThan, 0); }
-		public TerminalNode Exclamation() { return getToken(PCREParser.Exclamation, 0); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
+		public TerminalNode LessThan() { return getToken(REGEXParser.LessThan, 0); }
+		public TerminalNode Exclamation() { return getToken(REGEXParser.Exclamation, 0); }
 		public AlternationContext alternation() {
 			return getRuleContext(AlternationContext.class,0);
 		}
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
 		public Look_behind_negativeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_look_behind_negative; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterLook_behind_negative(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterLook_behind_negative(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitLook_behind_negative(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitLook_behind_negative(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitLook_behind_negative(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitLook_behind_negative(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3309,32 +3306,32 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Embedded_codeContext extends ParserRuleContext {
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public List<TerminalNode> QuestionMark() { return getTokens(PCREParser.QuestionMark); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public List<TerminalNode> QuestionMark() { return getTokens(REGEXParser.QuestionMark); }
 		public TerminalNode QuestionMark(int i) {
-			return getToken(PCREParser.QuestionMark, i);
+			return getToken(REGEXParser.QuestionMark, i);
 		}
-		public TerminalNode OpenBrace() { return getToken(PCREParser.OpenBrace, 0); }
+		public TerminalNode OpenBrace() { return getToken(REGEXParser.OpenBrace, 0); }
 		public AlternationContext alternation() {
 			return getRuleContext(AlternationContext.class,0);
 		}
-		public TerminalNode CloseBrace() { return getToken(PCREParser.CloseBrace, 0); }
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
+		public TerminalNode CloseBrace() { return getToken(REGEXParser.CloseBrace, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
 		public Embedded_codeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_embedded_code; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterEmbedded_code(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterEmbedded_code(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitEmbedded_code(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitEmbedded_code(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitEmbedded_code(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitEmbedded_code(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3396,22 +3393,22 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Define_groupContext extends ParserRuleContext {
-		public List<TerminalNode> OpenParen() { return getTokens(PCREParser.OpenParen); }
+		public List<TerminalNode> OpenParen() { return getTokens(REGEXParser.OpenParen); }
 		public TerminalNode OpenParen(int i) {
-			return getToken(PCREParser.OpenParen, i);
+			return getToken(REGEXParser.OpenParen, i);
 		}
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
-		public TerminalNode DUC() { return getToken(PCREParser.DUC, 0); }
-		public List<TerminalNode> EUC() { return getTokens(PCREParser.EUC); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
+		public TerminalNode DUC() { return getToken(REGEXParser.DUC, 0); }
+		public List<TerminalNode> EUC() { return getTokens(REGEXParser.EUC); }
 		public TerminalNode EUC(int i) {
-			return getToken(PCREParser.EUC, i);
+			return getToken(REGEXParser.EUC, i);
 		}
-		public TerminalNode FUC() { return getToken(PCREParser.FUC, 0); }
-		public TerminalNode IUC() { return getToken(PCREParser.IUC, 0); }
-		public TerminalNode NUC() { return getToken(PCREParser.NUC, 0); }
-		public List<TerminalNode> CloseParen() { return getTokens(PCREParser.CloseParen); }
+		public TerminalNode FUC() { return getToken(REGEXParser.FUC, 0); }
+		public TerminalNode IUC() { return getToken(REGEXParser.IUC, 0); }
+		public TerminalNode NUC() { return getToken(REGEXParser.NUC, 0); }
+		public List<TerminalNode> CloseParen() { return getTokens(REGEXParser.CloseParen); }
 		public TerminalNode CloseParen(int i) {
-			return getToken(PCREParser.CloseParen, i);
+			return getToken(REGEXParser.CloseParen, i);
 		}
 		public Name_caturpeContext name_caturpe() {
 			return getRuleContext(Name_caturpeContext.class,0);
@@ -3422,15 +3419,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_define_group; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterDefine_group(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterDefine_group(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitDefine_group(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitDefine_group(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitDefine_group(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitDefine_group(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3479,26 +3476,26 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Subroutine_referenceContext extends ParserRuleContext {
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
-		public TerminalNode RUC() { return getToken(PCREParser.RUC, 0); }
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
+		public TerminalNode RUC() { return getToken(REGEXParser.RUC, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
 		public NumberContext number() {
 			return getRuleContext(NumberContext.class,0);
 		}
-		public TerminalNode Plus() { return getToken(PCREParser.Plus, 0); }
-		public TerminalNode Hyphen() { return getToken(PCREParser.Hyphen, 0); }
-		public TerminalNode Ampersand() { return getToken(PCREParser.Ampersand, 0); }
+		public TerminalNode Plus() { return getToken(REGEXParser.Plus, 0); }
+		public TerminalNode Hyphen() { return getToken(REGEXParser.Hyphen, 0); }
+		public TerminalNode Ampersand() { return getToken(REGEXParser.Ampersand, 0); }
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
-		public TerminalNode PUC() { return getToken(PCREParser.PUC, 0); }
-		public TerminalNode GreaterThan() { return getToken(PCREParser.GreaterThan, 0); }
-		public TerminalNode SubroutineOrNamedReferenceStartG() { return getToken(PCREParser.SubroutineOrNamedReferenceStartG, 0); }
-		public TerminalNode LessThan() { return getToken(PCREParser.LessThan, 0); }
-		public List<TerminalNode> SingleQuote() { return getTokens(PCREParser.SingleQuote); }
+		public TerminalNode PUC() { return getToken(REGEXParser.PUC, 0); }
+		public TerminalNode GreaterThan() { return getToken(REGEXParser.GreaterThan, 0); }
+		public TerminalNode SubroutineOrNamedReferenceStartG() { return getToken(REGEXParser.SubroutineOrNamedReferenceStartG, 0); }
+		public TerminalNode LessThan() { return getToken(REGEXParser.LessThan, 0); }
+		public List<TerminalNode> SingleQuote() { return getTokens(REGEXParser.SingleQuote); }
 		public TerminalNode SingleQuote(int i) {
-			return getToken(PCREParser.SingleQuote, i);
+			return getToken(REGEXParser.SingleQuote, i);
 		}
 		public Subroutine_referenceContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3506,15 +3503,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_subroutine_reference; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterSubroutine_reference(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterSubroutine_reference(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitSubroutine_reference(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitSubroutine_reference(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitSubroutine_reference(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitSubroutine_reference(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3740,17 +3737,17 @@ public class PCREParser extends Parser {
 	}
 
 	public static class ConditionalContext extends ParserRuleContext {
-		public List<TerminalNode> OpenParen() { return getTokens(PCREParser.OpenParen); }
+		public List<TerminalNode> OpenParen() { return getTokens(REGEXParser.OpenParen); }
 		public TerminalNode OpenParen(int i) {
-			return getToken(PCREParser.OpenParen, i);
+			return getToken(REGEXParser.OpenParen, i);
 		}
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
 		public NumberContext number() {
 			return getRuleContext(NumberContext.class,0);
 		}
-		public List<TerminalNode> CloseParen() { return getTokens(PCREParser.CloseParen); }
+		public List<TerminalNode> CloseParen() { return getTokens(REGEXParser.CloseParen); }
 		public TerminalNode CloseParen(int i) {
-			return getToken(PCREParser.CloseParen, i);
+			return getToken(REGEXParser.CloseParen, i);
 		}
 		public List<AlternationContext> alternation() {
 			return getRuleContexts(AlternationContext.class);
@@ -3758,37 +3755,37 @@ public class PCREParser extends Parser {
 		public AlternationContext alternation(int i) {
 			return getRuleContext(AlternationContext.class,i);
 		}
-		public TerminalNode Pipe() { return getToken(PCREParser.Pipe, 0); }
-		public TerminalNode Colon() { return getToken(PCREParser.Colon, 0); }
-		public TerminalNode LessThan() { return getToken(PCREParser.LessThan, 0); }
-		public TerminalNode GreaterThan() { return getToken(PCREParser.GreaterThan, 0); }
-		public TerminalNode Plus() { return getToken(PCREParser.Plus, 0); }
-		public TerminalNode Hyphen() { return getToken(PCREParser.Hyphen, 0); }
+		public TerminalNode Pipe() { return getToken(REGEXParser.Pipe, 0); }
+		public TerminalNode Colon() { return getToken(REGEXParser.Colon, 0); }
+		public TerminalNode LessThan() { return getToken(REGEXParser.LessThan, 0); }
+		public TerminalNode GreaterThan() { return getToken(REGEXParser.GreaterThan, 0); }
+		public TerminalNode Plus() { return getToken(REGEXParser.Plus, 0); }
+		public TerminalNode Hyphen() { return getToken(REGEXParser.Hyphen, 0); }
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
-		public List<TerminalNode> SingleQuote() { return getTokens(PCREParser.SingleQuote); }
+		public List<TerminalNode> SingleQuote() { return getTokens(REGEXParser.SingleQuote); }
 		public TerminalNode SingleQuote(int i) {
-			return getToken(PCREParser.SingleQuote, i);
+			return getToken(REGEXParser.SingleQuote, i);
 		}
-		public TerminalNode RUC() { return getToken(PCREParser.RUC, 0); }
-		public TerminalNode Ampersand() { return getToken(PCREParser.Ampersand, 0); }
-		public TerminalNode DUC() { return getToken(PCREParser.DUC, 0); }
-		public List<TerminalNode> EUC() { return getTokens(PCREParser.EUC); }
+		public TerminalNode RUC() { return getToken(REGEXParser.RUC, 0); }
+		public TerminalNode Ampersand() { return getToken(REGEXParser.Ampersand, 0); }
+		public TerminalNode DUC() { return getToken(REGEXParser.DUC, 0); }
+		public List<TerminalNode> EUC() { return getTokens(REGEXParser.EUC); }
 		public TerminalNode EUC(int i) {
-			return getToken(PCREParser.EUC, i);
+			return getToken(REGEXParser.EUC, i);
 		}
-		public TerminalNode FUC() { return getToken(PCREParser.FUC, 0); }
-		public TerminalNode IUC() { return getToken(PCREParser.IUC, 0); }
-		public TerminalNode NUC() { return getToken(PCREParser.NUC, 0); }
-		public TerminalNode ALC() { return getToken(PCREParser.ALC, 0); }
-		public List<TerminalNode> SLC() { return getTokens(PCREParser.SLC); }
+		public TerminalNode FUC() { return getToken(REGEXParser.FUC, 0); }
+		public TerminalNode IUC() { return getToken(REGEXParser.IUC, 0); }
+		public TerminalNode NUC() { return getToken(REGEXParser.NUC, 0); }
+		public TerminalNode ALC() { return getToken(REGEXParser.ALC, 0); }
+		public List<TerminalNode> SLC() { return getTokens(REGEXParser.SLC); }
 		public TerminalNode SLC(int i) {
-			return getToken(PCREParser.SLC, i);
+			return getToken(REGEXParser.SLC, i);
 		}
-		public TerminalNode ELC() { return getToken(PCREParser.ELC, 0); }
-		public TerminalNode RLC() { return getToken(PCREParser.RLC, 0); }
-		public TerminalNode TLC() { return getToken(PCREParser.TLC, 0); }
+		public TerminalNode ELC() { return getToken(REGEXParser.ELC, 0); }
+		public TerminalNode RLC() { return getToken(REGEXParser.RLC, 0); }
+		public TerminalNode TLC() { return getToken(REGEXParser.TLC, 0); }
 		public Look_aroundContext look_around() {
 			return getRuleContext(Look_aroundContext.class,0);
 		}
@@ -3798,15 +3795,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_conditional; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterConditional(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterConditional(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitConditional(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitConditional(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitConditional(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitConditional(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -4413,56 +4410,56 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Backtrack_controlContext extends ParserRuleContext {
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode Star() { return getToken(PCREParser.Star, 0); }
-		public List<TerminalNode> AUC() { return getTokens(PCREParser.AUC); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode Star() { return getToken(REGEXParser.Star, 0); }
+		public List<TerminalNode> AUC() { return getTokens(REGEXParser.AUC); }
 		public TerminalNode AUC(int i) {
-			return getToken(PCREParser.AUC, i);
+			return getToken(REGEXParser.AUC, i);
 		}
-		public List<TerminalNode> CUC() { return getTokens(PCREParser.CUC); }
+		public List<TerminalNode> CUC() { return getTokens(REGEXParser.CUC); }
 		public TerminalNode CUC(int i) {
-			return getToken(PCREParser.CUC, i);
+			return getToken(REGEXParser.CUC, i);
 		}
-		public List<TerminalNode> EUC() { return getTokens(PCREParser.EUC); }
+		public List<TerminalNode> EUC() { return getTokens(REGEXParser.EUC); }
 		public TerminalNode EUC(int i) {
-			return getToken(PCREParser.EUC, i);
+			return getToken(REGEXParser.EUC, i);
 		}
-		public TerminalNode PUC() { return getToken(PCREParser.PUC, 0); }
-		public TerminalNode TUC() { return getToken(PCREParser.TUC, 0); }
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
-		public TerminalNode FUC() { return getToken(PCREParser.FUC, 0); }
-		public TerminalNode IUC() { return getToken(PCREParser.IUC, 0); }
-		public TerminalNode LUC() { return getToken(PCREParser.LUC, 0); }
-		public TerminalNode Colon() { return getToken(PCREParser.Colon, 0); }
-		public List<TerminalNode> NUC() { return getTokens(PCREParser.NUC); }
+		public TerminalNode PUC() { return getToken(REGEXParser.PUC, 0); }
+		public TerminalNode TUC() { return getToken(REGEXParser.TUC, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
+		public TerminalNode FUC() { return getToken(REGEXParser.FUC, 0); }
+		public TerminalNode IUC() { return getToken(REGEXParser.IUC, 0); }
+		public TerminalNode LUC() { return getToken(REGEXParser.LUC, 0); }
+		public TerminalNode Colon() { return getToken(REGEXParser.Colon, 0); }
+		public List<TerminalNode> NUC() { return getTokens(REGEXParser.NUC); }
 		public TerminalNode NUC(int i) {
-			return getToken(PCREParser.NUC, i);
+			return getToken(REGEXParser.NUC, i);
 		}
-		public List<TerminalNode> MUC() { return getTokens(PCREParser.MUC); }
+		public List<TerminalNode> MUC() { return getTokens(REGEXParser.MUC); }
 		public TerminalNode MUC(int i) {
-			return getToken(PCREParser.MUC, i);
+			return getToken(REGEXParser.MUC, i);
 		}
-		public TerminalNode RUC() { return getToken(PCREParser.RUC, 0); }
-		public TerminalNode KUC() { return getToken(PCREParser.KUC, 0); }
-		public TerminalNode OUC() { return getToken(PCREParser.OUC, 0); }
-		public TerminalNode UUC() { return getToken(PCREParser.UUC, 0); }
-		public TerminalNode SUC() { return getToken(PCREParser.SUC, 0); }
-		public TerminalNode HUC() { return getToken(PCREParser.HUC, 0); }
+		public TerminalNode RUC() { return getToken(REGEXParser.RUC, 0); }
+		public TerminalNode KUC() { return getToken(REGEXParser.KUC, 0); }
+		public TerminalNode OUC() { return getToken(REGEXParser.OUC, 0); }
+		public TerminalNode UUC() { return getToken(REGEXParser.UUC, 0); }
+		public TerminalNode SUC() { return getToken(REGEXParser.SUC, 0); }
+		public TerminalNode HUC() { return getToken(REGEXParser.HUC, 0); }
 		public Backtrack_controlContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_backtrack_control; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterBacktrack_control(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterBacktrack_control(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitBacktrack_control(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitBacktrack_control(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitBacktrack_control(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitBacktrack_control(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -4747,42 +4744,42 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Newline_conventionContext extends ParserRuleContext {
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode Star() { return getToken(PCREParser.Star, 0); }
-		public TerminalNode CUC() { return getToken(PCREParser.CUC, 0); }
-		public List<TerminalNode> RUC() { return getTokens(PCREParser.RUC); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode Star() { return getToken(REGEXParser.Star, 0); }
+		public TerminalNode CUC() { return getToken(REGEXParser.CUC, 0); }
+		public List<TerminalNode> RUC() { return getTokens(REGEXParser.RUC); }
 		public TerminalNode RUC(int i) {
-			return getToken(PCREParser.RUC, i);
+			return getToken(REGEXParser.RUC, i);
 		}
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
-		public TerminalNode LUC() { return getToken(PCREParser.LUC, 0); }
-		public TerminalNode FUC() { return getToken(PCREParser.FUC, 0); }
-		public TerminalNode AUC() { return getToken(PCREParser.AUC, 0); }
-		public TerminalNode NUC() { return getToken(PCREParser.NUC, 0); }
-		public TerminalNode YUC() { return getToken(PCREParser.YUC, 0); }
-		public TerminalNode BUC() { return getToken(PCREParser.BUC, 0); }
-		public TerminalNode SUC() { return getToken(PCREParser.SUC, 0); }
-		public TerminalNode Underscore() { return getToken(PCREParser.Underscore, 0); }
-		public TerminalNode UUC() { return getToken(PCREParser.UUC, 0); }
-		public TerminalNode IUC() { return getToken(PCREParser.IUC, 0); }
-		public TerminalNode OUC() { return getToken(PCREParser.OUC, 0); }
-		public TerminalNode DUC() { return getToken(PCREParser.DUC, 0); }
-		public TerminalNode EUC() { return getToken(PCREParser.EUC, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
+		public TerminalNode LUC() { return getToken(REGEXParser.LUC, 0); }
+		public TerminalNode FUC() { return getToken(REGEXParser.FUC, 0); }
+		public TerminalNode AUC() { return getToken(REGEXParser.AUC, 0); }
+		public TerminalNode NUC() { return getToken(REGEXParser.NUC, 0); }
+		public TerminalNode YUC() { return getToken(REGEXParser.YUC, 0); }
+		public TerminalNode BUC() { return getToken(REGEXParser.BUC, 0); }
+		public TerminalNode SUC() { return getToken(REGEXParser.SUC, 0); }
+		public TerminalNode Underscore() { return getToken(REGEXParser.Underscore, 0); }
+		public TerminalNode UUC() { return getToken(REGEXParser.UUC, 0); }
+		public TerminalNode IUC() { return getToken(REGEXParser.IUC, 0); }
+		public TerminalNode OUC() { return getToken(REGEXParser.OUC, 0); }
+		public TerminalNode DUC() { return getToken(REGEXParser.DUC, 0); }
+		public TerminalNode EUC() { return getToken(REGEXParser.EUC, 0); }
 		public Newline_conventionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_newline_convention; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterNewline_convention(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterNewline_convention(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitNewline_convention(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitNewline_convention(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitNewline_convention(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitNewline_convention(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -4965,10 +4962,10 @@ public class PCREParser extends Parser {
 	}
 
 	public static class CalloutContext extends ParserRuleContext {
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
-		public TerminalNode CUC() { return getToken(PCREParser.CUC, 0); }
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
+		public TerminalNode CUC() { return getToken(REGEXParser.CUC, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
 		public NumberContext number() {
 			return getRuleContext(NumberContext.class,0);
 		}
@@ -4978,15 +4975,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_callout; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterCallout(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterCallout(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitCallout(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitCallout(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitCallout(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitCallout(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -5091,24 +5088,24 @@ public class PCREParser extends Parser {
 		public CalloutContext callout() {
 			return getRuleContext(CalloutContext.class,0);
 		}
-		public TerminalNode ResetStartMatch() { return getToken(PCREParser.ResetStartMatch, 0); }
-		public TerminalNode OneDataUnit() { return getToken(PCREParser.OneDataUnit, 0); }
-		public TerminalNode ExtendedUnicodeChar() { return getToken(PCREParser.ExtendedUnicodeChar, 0); }
+		public TerminalNode ResetStartMatch() { return getToken(REGEXParser.ResetStartMatch, 0); }
+		public TerminalNode OneDataUnit() { return getToken(REGEXParser.OneDataUnit, 0); }
+		public TerminalNode ExtendedUnicodeChar() { return getToken(REGEXParser.ExtendedUnicodeChar, 0); }
 		public AtomContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_atom; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterAtom(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterAtom(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitAtom(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitAtom(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitAtom(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitAtom(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -5274,29 +5271,29 @@ public class PCREParser extends Parser {
 	}
 
 	public static class AnchorContext extends ParserRuleContext {
-		public TerminalNode Caret() { return getToken(PCREParser.Caret, 0); }
-		public TerminalNode StartOfSubject() { return getToken(PCREParser.StartOfSubject, 0); }
-		public TerminalNode WordBoundary() { return getToken(PCREParser.WordBoundary, 0); }
-		public TerminalNode NonWordBoundary() { return getToken(PCREParser.NonWordBoundary, 0); }
-		public TerminalNode EndOfSubjectOrLine() { return getToken(PCREParser.EndOfSubjectOrLine, 0); }
-		public TerminalNode EndOfSubjectOrLineEndOfSubject() { return getToken(PCREParser.EndOfSubjectOrLineEndOfSubject, 0); }
-		public TerminalNode EndOfSubject() { return getToken(PCREParser.EndOfSubject, 0); }
-		public TerminalNode PreviousMatchInSubject() { return getToken(PCREParser.PreviousMatchInSubject, 0); }
+		public TerminalNode Caret() { return getToken(REGEXParser.Caret, 0); }
+		public TerminalNode StartOfSubject() { return getToken(REGEXParser.StartOfSubject, 0); }
+		public TerminalNode WordBoundary() { return getToken(REGEXParser.WordBoundary, 0); }
+		public TerminalNode NonWordBoundary() { return getToken(REGEXParser.NonWordBoundary, 0); }
+		public TerminalNode EndOfSubjectOrLine() { return getToken(REGEXParser.EndOfSubjectOrLine, 0); }
+		public TerminalNode EndOfSubjectOrLineEndOfSubject() { return getToken(REGEXParser.EndOfSubjectOrLineEndOfSubject, 0); }
+		public TerminalNode EndOfSubject() { return getToken(REGEXParser.EndOfSubject, 0); }
+		public TerminalNode PreviousMatchInSubject() { return getToken(REGEXParser.PreviousMatchInSubject, 0); }
 		public AnchorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_anchor; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterAnchor(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterAnchor(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitAnchor(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitAnchor(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitAnchor(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitAnchor(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -5341,7 +5338,7 @@ public class PCREParser extends Parser {
 		public Cc_literalContext cc_literal(int i) {
 			return getRuleContext(Cc_literalContext.class,i);
 		}
-		public TerminalNode Hyphen() { return getToken(PCREParser.Hyphen, 0); }
+		public TerminalNode Hyphen() { return getToken(REGEXParser.Hyphen, 0); }
 		public Shared_atomContext shared_atom() {
 			return getRuleContext(Shared_atomContext.class,0);
 		}
@@ -5354,15 +5351,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_cc_atom; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterCc_atom(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterCc_atom(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitCc_atom(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitCc_atom(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitCc_atom(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitCc_atom(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -5427,41 +5424,41 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Shared_atomContext extends ParserRuleContext {
-		public TerminalNode POSIXNamedSet() { return getToken(PCREParser.POSIXNamedSet, 0); }
-		public TerminalNode POSIXNegatedNamedSet() { return getToken(PCREParser.POSIXNegatedNamedSet, 0); }
-		public TerminalNode ControlChar() { return getToken(PCREParser.ControlChar, 0); }
-		public TerminalNode DecimalDigit() { return getToken(PCREParser.DecimalDigit, 0); }
-		public TerminalNode NotDecimalDigit() { return getToken(PCREParser.NotDecimalDigit, 0); }
-		public TerminalNode HorizontalWhiteSpace() { return getToken(PCREParser.HorizontalWhiteSpace, 0); }
-		public TerminalNode NotHorizontalWhiteSpace() { return getToken(PCREParser.NotHorizontalWhiteSpace, 0); }
-		public TerminalNode NotNewLine() { return getToken(PCREParser.NotNewLine, 0); }
-		public TerminalNode CharWithProperty() { return getToken(PCREParser.CharWithProperty, 0); }
-		public TerminalNode SingleCharWithProperty() { return getToken(PCREParser.SingleCharWithProperty, 0); }
-		public TerminalNode CharWithoutProperty() { return getToken(PCREParser.CharWithoutProperty, 0); }
-		public TerminalNode SingleCharWithoutProperty() { return getToken(PCREParser.SingleCharWithoutProperty, 0); }
-		public TerminalNode NewLineSequence() { return getToken(PCREParser.NewLineSequence, 0); }
-		public TerminalNode WhiteSpace() { return getToken(PCREParser.WhiteSpace, 0); }
-		public TerminalNode NotWhiteSpace() { return getToken(PCREParser.NotWhiteSpace, 0); }
-		public TerminalNode VerticalWhiteSpace() { return getToken(PCREParser.VerticalWhiteSpace, 0); }
-		public TerminalNode NotVerticalWhiteSpace() { return getToken(PCREParser.NotVerticalWhiteSpace, 0); }
-		public TerminalNode WordChar() { return getToken(PCREParser.WordChar, 0); }
-		public TerminalNode NotWordChar() { return getToken(PCREParser.NotWordChar, 0); }
-		public TerminalNode Dot() { return getToken(PCREParser.Dot, 0); }
+		public TerminalNode POSIXNamedSet() { return getToken(REGEXParser.POSIXNamedSet, 0); }
+		public TerminalNode POSIXNegatedNamedSet() { return getToken(REGEXParser.POSIXNegatedNamedSet, 0); }
+		public TerminalNode ControlChar() { return getToken(REGEXParser.ControlChar, 0); }
+		public TerminalNode DecimalDigit() { return getToken(REGEXParser.DecimalDigit, 0); }
+		public TerminalNode NotDecimalDigit() { return getToken(REGEXParser.NotDecimalDigit, 0); }
+		public TerminalNode HorizontalWhiteSpace() { return getToken(REGEXParser.HorizontalWhiteSpace, 0); }
+		public TerminalNode NotHorizontalWhiteSpace() { return getToken(REGEXParser.NotHorizontalWhiteSpace, 0); }
+		public TerminalNode NotNewLine() { return getToken(REGEXParser.NotNewLine, 0); }
+		public TerminalNode CharWithProperty() { return getToken(REGEXParser.CharWithProperty, 0); }
+		public TerminalNode SingleCharWithProperty() { return getToken(REGEXParser.SingleCharWithProperty, 0); }
+		public TerminalNode CharWithoutProperty() { return getToken(REGEXParser.CharWithoutProperty, 0); }
+		public TerminalNode SingleCharWithoutProperty() { return getToken(REGEXParser.SingleCharWithoutProperty, 0); }
+		public TerminalNode NewLineSequence() { return getToken(REGEXParser.NewLineSequence, 0); }
+		public TerminalNode WhiteSpace() { return getToken(REGEXParser.WhiteSpace, 0); }
+		public TerminalNode NotWhiteSpace() { return getToken(REGEXParser.NotWhiteSpace, 0); }
+		public TerminalNode VerticalWhiteSpace() { return getToken(REGEXParser.VerticalWhiteSpace, 0); }
+		public TerminalNode NotVerticalWhiteSpace() { return getToken(REGEXParser.NotVerticalWhiteSpace, 0); }
+		public TerminalNode WordChar() { return getToken(REGEXParser.WordChar, 0); }
+		public TerminalNode NotWordChar() { return getToken(REGEXParser.NotWordChar, 0); }
+		public TerminalNode Dot() { return getToken(REGEXParser.Dot, 0); }
 		public Shared_atomContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_shared_atom; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterShared_atom(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterShared_atom(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitShared_atom(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitShared_atom(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitShared_atom(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitShared_atom(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -5500,22 +5497,22 @@ public class PCREParser extends Parser {
 		public Shared_literalContext shared_literal() {
 			return getRuleContext(Shared_literalContext.class,0);
 		}
-		public TerminalNode CharacterClassEnd() { return getToken(PCREParser.CharacterClassEnd, 0); }
+		public TerminalNode CharacterClassEnd() { return getToken(REGEXParser.CharacterClassEnd, 0); }
 		public LiteralContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_literal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterLiteral(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterLiteral(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitLiteral(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitLiteral(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitLiteral(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitLiteral(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -5655,32 +5652,32 @@ public class PCREParser extends Parser {
 		public Shared_literalContext shared_literal() {
 			return getRuleContext(Shared_literalContext.class,0);
 		}
-		public TerminalNode Dot() { return getToken(PCREParser.Dot, 0); }
-		public TerminalNode CharacterClassStart() { return getToken(PCREParser.CharacterClassStart, 0); }
-		public TerminalNode Caret() { return getToken(PCREParser.Caret, 0); }
-		public TerminalNode QuestionMark() { return getToken(PCREParser.QuestionMark, 0); }
-		public TerminalNode Plus() { return getToken(PCREParser.Plus, 0); }
-		public TerminalNode Star() { return getToken(PCREParser.Star, 0); }
-		public TerminalNode WordBoundary() { return getToken(PCREParser.WordBoundary, 0); }
-		public TerminalNode EndOfSubjectOrLine() { return getToken(PCREParser.EndOfSubjectOrLine, 0); }
-		public TerminalNode Pipe() { return getToken(PCREParser.Pipe, 0); }
-		public TerminalNode OpenParen() { return getToken(PCREParser.OpenParen, 0); }
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
+		public TerminalNode Dot() { return getToken(REGEXParser.Dot, 0); }
+		public TerminalNode CharacterClassStart() { return getToken(REGEXParser.CharacterClassStart, 0); }
+		public TerminalNode Caret() { return getToken(REGEXParser.Caret, 0); }
+		public TerminalNode QuestionMark() { return getToken(REGEXParser.QuestionMark, 0); }
+		public TerminalNode Plus() { return getToken(REGEXParser.Plus, 0); }
+		public TerminalNode Star() { return getToken(REGEXParser.Star, 0); }
+		public TerminalNode WordBoundary() { return getToken(REGEXParser.WordBoundary, 0); }
+		public TerminalNode EndOfSubjectOrLine() { return getToken(REGEXParser.EndOfSubjectOrLine, 0); }
+		public TerminalNode Pipe() { return getToken(REGEXParser.Pipe, 0); }
+		public TerminalNode OpenParen() { return getToken(REGEXParser.OpenParen, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
 		public Cc_literalContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_cc_literal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterCc_literal(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterCc_literal(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitCc_literal(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitCc_literal(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitCc_literal(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitCc_literal(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -5902,53 +5899,53 @@ public class PCREParser extends Parser {
 		public Block_quotedContext block_quoted() {
 			return getRuleContext(Block_quotedContext.class,0);
 		}
-		public TerminalNode BellChar() { return getToken(PCREParser.BellChar, 0); }
-		public TerminalNode EscapeChar() { return getToken(PCREParser.EscapeChar, 0); }
-		public TerminalNode FormFeed() { return getToken(PCREParser.FormFeed, 0); }
-		public TerminalNode NewLine() { return getToken(PCREParser.NewLine, 0); }
-		public TerminalNode CarriageReturn() { return getToken(PCREParser.CarriageReturn, 0); }
-		public TerminalNode Tab() { return getToken(PCREParser.Tab, 0); }
-		public TerminalNode Quoted() { return getToken(PCREParser.Quoted, 0); }
-		public TerminalNode OpenBrace() { return getToken(PCREParser.OpenBrace, 0); }
-		public TerminalNode CloseBrace() { return getToken(PCREParser.CloseBrace, 0); }
-		public TerminalNode Comma() { return getToken(PCREParser.Comma, 0); }
-		public TerminalNode Hyphen() { return getToken(PCREParser.Hyphen, 0); }
-		public TerminalNode LessThan() { return getToken(PCREParser.LessThan, 0); }
-		public TerminalNode GreaterThan() { return getToken(PCREParser.GreaterThan, 0); }
-		public TerminalNode SingleQuote() { return getToken(PCREParser.SingleQuote, 0); }
-		public TerminalNode Underscore() { return getToken(PCREParser.Underscore, 0); }
-		public TerminalNode Colon() { return getToken(PCREParser.Colon, 0); }
-		public TerminalNode Hash() { return getToken(PCREParser.Hash, 0); }
-		public TerminalNode Equals() { return getToken(PCREParser.Equals, 0); }
-		public TerminalNode Exclamation() { return getToken(PCREParser.Exclamation, 0); }
-		public TerminalNode Ampersand() { return getToken(PCREParser.Ampersand, 0); }
-		public TerminalNode OtherChar() { return getToken(PCREParser.OtherChar, 0); }
-		public TerminalNode Slash() { return getToken(PCREParser.Slash, 0); }
-		public TerminalNode Semicolon() { return getToken(PCREParser.Semicolon, 0); }
-		public TerminalNode Mail() { return getToken(PCREParser.Mail, 0); }
-		public TerminalNode Percent() { return getToken(PCREParser.Percent, 0); }
-		public TerminalNode Wave() { return getToken(PCREParser.Wave, 0); }
-		public TerminalNode DoubleQuote() { return getToken(PCREParser.DoubleQuote, 0); }
-		public TerminalNode Backquote() { return getToken(PCREParser.Backquote, 0); }
-		public TerminalNode BackSlashq() { return getToken(PCREParser.BackSlashq, 0); }
-		public TerminalNode BackSlashe() { return getToken(PCREParser.BackSlashe, 0); }
-		public TerminalNode BackSlashu() { return getToken(PCREParser.BackSlashu, 0); }
-		public TerminalNode BackSlashx() { return getToken(PCREParser.BackSlashx, 0); }
+		public TerminalNode BellChar() { return getToken(REGEXParser.BellChar, 0); }
+		public TerminalNode EscapeChar() { return getToken(REGEXParser.EscapeChar, 0); }
+		public TerminalNode FormFeed() { return getToken(REGEXParser.FormFeed, 0); }
+		public TerminalNode NewLine() { return getToken(REGEXParser.NewLine, 0); }
+		public TerminalNode CarriageReturn() { return getToken(REGEXParser.CarriageReturn, 0); }
+		public TerminalNode Tab() { return getToken(REGEXParser.Tab, 0); }
+		public TerminalNode Quoted() { return getToken(REGEXParser.Quoted, 0); }
+		public TerminalNode OpenBrace() { return getToken(REGEXParser.OpenBrace, 0); }
+		public TerminalNode CloseBrace() { return getToken(REGEXParser.CloseBrace, 0); }
+		public TerminalNode Comma() { return getToken(REGEXParser.Comma, 0); }
+		public TerminalNode Hyphen() { return getToken(REGEXParser.Hyphen, 0); }
+		public TerminalNode LessThan() { return getToken(REGEXParser.LessThan, 0); }
+		public TerminalNode GreaterThan() { return getToken(REGEXParser.GreaterThan, 0); }
+		public TerminalNode SingleQuote() { return getToken(REGEXParser.SingleQuote, 0); }
+		public TerminalNode Underscore() { return getToken(REGEXParser.Underscore, 0); }
+		public TerminalNode Colon() { return getToken(REGEXParser.Colon, 0); }
+		public TerminalNode Hash() { return getToken(REGEXParser.Hash, 0); }
+		public TerminalNode Equals() { return getToken(REGEXParser.Equals, 0); }
+		public TerminalNode Exclamation() { return getToken(REGEXParser.Exclamation, 0); }
+		public TerminalNode Ampersand() { return getToken(REGEXParser.Ampersand, 0); }
+		public TerminalNode OtherChar() { return getToken(REGEXParser.OtherChar, 0); }
+		public TerminalNode Slash() { return getToken(REGEXParser.Slash, 0); }
+		public TerminalNode Semicolon() { return getToken(REGEXParser.Semicolon, 0); }
+		public TerminalNode Mail() { return getToken(REGEXParser.Mail, 0); }
+		public TerminalNode Percent() { return getToken(REGEXParser.Percent, 0); }
+		public TerminalNode Wave() { return getToken(REGEXParser.Wave, 0); }
+		public TerminalNode DoubleQuote() { return getToken(REGEXParser.DoubleQuote, 0); }
+		public TerminalNode Backquote() { return getToken(REGEXParser.Backquote, 0); }
+		public TerminalNode BackSlashq() { return getToken(REGEXParser.BackSlashq, 0); }
+		public TerminalNode BackSlashe() { return getToken(REGEXParser.BackSlashe, 0); }
+		public TerminalNode BackSlashu() { return getToken(REGEXParser.BackSlashu, 0); }
+		public TerminalNode BackSlashx() { return getToken(REGEXParser.BackSlashx, 0); }
 		public Shared_literalContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_shared_literal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterShared_literal(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterShared_literal(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitShared_literal(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitShared_literal(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitShared_literal(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitShared_literal(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6242,15 +6239,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_number; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterNumber(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterNumber(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitNumber(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitNumber(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitNumber(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitNumber(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6277,32 +6274,32 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Octal_charContext extends ParserRuleContext {
-		public TerminalNode Backslash() { return getToken(PCREParser.Backslash, 0); }
+		public TerminalNode Backslash() { return getToken(REGEXParser.Backslash, 0); }
 		public List<Octal_digitContext> octal_digit() {
 			return getRuleContexts(Octal_digitContext.class);
 		}
 		public Octal_digitContext octal_digit(int i) {
 			return getRuleContext(Octal_digitContext.class,i);
 		}
-		public TerminalNode D0() { return getToken(PCREParser.D0, 0); }
-		public TerminalNode D1() { return getToken(PCREParser.D1, 0); }
-		public TerminalNode D2() { return getToken(PCREParser.D2, 0); }
-		public TerminalNode D3() { return getToken(PCREParser.D3, 0); }
+		public TerminalNode D0() { return getToken(REGEXParser.D0, 0); }
+		public TerminalNode D1() { return getToken(REGEXParser.D1, 0); }
+		public TerminalNode D2() { return getToken(REGEXParser.D2, 0); }
+		public TerminalNode D3() { return getToken(REGEXParser.D3, 0); }
 		public Octal_charContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_octal_char; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterOctal_char(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterOctal_char(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitOctal_char(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitOctal_char(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitOctal_char(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitOctal_char(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6362,31 +6359,31 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Hex_charContext extends ParserRuleContext {
-		public TerminalNode BackSlashx() { return getToken(PCREParser.BackSlashx, 0); }
+		public TerminalNode BackSlashx() { return getToken(REGEXParser.BackSlashx, 0); }
 		public List<Hex_digitContext> hex_digit() {
 			return getRuleContexts(Hex_digitContext.class);
 		}
 		public Hex_digitContext hex_digit(int i) {
 			return getRuleContext(Hex_digitContext.class,i);
 		}
-		public TerminalNode OpenBrace() { return getToken(PCREParser.OpenBrace, 0); }
-		public TerminalNode CloseBrace() { return getToken(PCREParser.CloseBrace, 0); }
-		public TerminalNode BackSlashu() { return getToken(PCREParser.BackSlashu, 0); }
+		public TerminalNode OpenBrace() { return getToken(REGEXParser.OpenBrace, 0); }
+		public TerminalNode CloseBrace() { return getToken(REGEXParser.CloseBrace, 0); }
+		public TerminalNode BackSlashu() { return getToken(REGEXParser.BackSlashu, 0); }
 		public Hex_charContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_hex_char; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterHex_char(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterHex_char(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitHex_char(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitHex_char(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitHex_char(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitHex_char(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6535,29 +6532,29 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Octal_digitContext extends ParserRuleContext {
-		public TerminalNode D0() { return getToken(PCREParser.D0, 0); }
-		public TerminalNode D1() { return getToken(PCREParser.D1, 0); }
-		public TerminalNode D2() { return getToken(PCREParser.D2, 0); }
-		public TerminalNode D3() { return getToken(PCREParser.D3, 0); }
-		public TerminalNode D4() { return getToken(PCREParser.D4, 0); }
-		public TerminalNode D5() { return getToken(PCREParser.D5, 0); }
-		public TerminalNode D6() { return getToken(PCREParser.D6, 0); }
-		public TerminalNode D7() { return getToken(PCREParser.D7, 0); }
+		public TerminalNode D0() { return getToken(REGEXParser.D0, 0); }
+		public TerminalNode D1() { return getToken(REGEXParser.D1, 0); }
+		public TerminalNode D2() { return getToken(REGEXParser.D2, 0); }
+		public TerminalNode D3() { return getToken(REGEXParser.D3, 0); }
+		public TerminalNode D4() { return getToken(REGEXParser.D4, 0); }
+		public TerminalNode D5() { return getToken(REGEXParser.D5, 0); }
+		public TerminalNode D6() { return getToken(REGEXParser.D6, 0); }
+		public TerminalNode D7() { return getToken(REGEXParser.D7, 0); }
 		public Octal_digitContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_octal_digit; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterOctal_digit(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterOctal_digit(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitOctal_digit(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitOctal_digit(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitOctal_digit(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitOctal_digit(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6593,43 +6590,43 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Hex_digitContext extends ParserRuleContext {
-		public TerminalNode D0() { return getToken(PCREParser.D0, 0); }
-		public TerminalNode D1() { return getToken(PCREParser.D1, 0); }
-		public TerminalNode D2() { return getToken(PCREParser.D2, 0); }
-		public TerminalNode D3() { return getToken(PCREParser.D3, 0); }
-		public TerminalNode D4() { return getToken(PCREParser.D4, 0); }
-		public TerminalNode D5() { return getToken(PCREParser.D5, 0); }
-		public TerminalNode D6() { return getToken(PCREParser.D6, 0); }
-		public TerminalNode D7() { return getToken(PCREParser.D7, 0); }
-		public TerminalNode D8() { return getToken(PCREParser.D8, 0); }
-		public TerminalNode D9() { return getToken(PCREParser.D9, 0); }
-		public TerminalNode ALC() { return getToken(PCREParser.ALC, 0); }
-		public TerminalNode AUC() { return getToken(PCREParser.AUC, 0); }
-		public TerminalNode BLC() { return getToken(PCREParser.BLC, 0); }
-		public TerminalNode BUC() { return getToken(PCREParser.BUC, 0); }
-		public TerminalNode CLC() { return getToken(PCREParser.CLC, 0); }
-		public TerminalNode CUC() { return getToken(PCREParser.CUC, 0); }
-		public TerminalNode DLC() { return getToken(PCREParser.DLC, 0); }
-		public TerminalNode DUC() { return getToken(PCREParser.DUC, 0); }
-		public TerminalNode ELC() { return getToken(PCREParser.ELC, 0); }
-		public TerminalNode EUC() { return getToken(PCREParser.EUC, 0); }
-		public TerminalNode FLC() { return getToken(PCREParser.FLC, 0); }
-		public TerminalNode FUC() { return getToken(PCREParser.FUC, 0); }
+		public TerminalNode D0() { return getToken(REGEXParser.D0, 0); }
+		public TerminalNode D1() { return getToken(REGEXParser.D1, 0); }
+		public TerminalNode D2() { return getToken(REGEXParser.D2, 0); }
+		public TerminalNode D3() { return getToken(REGEXParser.D3, 0); }
+		public TerminalNode D4() { return getToken(REGEXParser.D4, 0); }
+		public TerminalNode D5() { return getToken(REGEXParser.D5, 0); }
+		public TerminalNode D6() { return getToken(REGEXParser.D6, 0); }
+		public TerminalNode D7() { return getToken(REGEXParser.D7, 0); }
+		public TerminalNode D8() { return getToken(REGEXParser.D8, 0); }
+		public TerminalNode D9() { return getToken(REGEXParser.D9, 0); }
+		public TerminalNode ALC() { return getToken(REGEXParser.ALC, 0); }
+		public TerminalNode AUC() { return getToken(REGEXParser.AUC, 0); }
+		public TerminalNode BLC() { return getToken(REGEXParser.BLC, 0); }
+		public TerminalNode BUC() { return getToken(REGEXParser.BUC, 0); }
+		public TerminalNode CLC() { return getToken(REGEXParser.CLC, 0); }
+		public TerminalNode CUC() { return getToken(REGEXParser.CUC, 0); }
+		public TerminalNode DLC() { return getToken(REGEXParser.DLC, 0); }
+		public TerminalNode DUC() { return getToken(REGEXParser.DUC, 0); }
+		public TerminalNode ELC() { return getToken(REGEXParser.ELC, 0); }
+		public TerminalNode EUC() { return getToken(REGEXParser.EUC, 0); }
+		public TerminalNode FLC() { return getToken(REGEXParser.FLC, 0); }
+		public TerminalNode FUC() { return getToken(REGEXParser.FUC, 0); }
 		public Hex_digitContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_hex_digit; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterHex_digit(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterHex_digit(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitHex_digit(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitHex_digit(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitHex_digit(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitHex_digit(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6677,15 +6674,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_digits; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterDigits(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterDigits(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitDigits(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitDigits(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitDigits(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitDigits(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6716,7 +6713,7 @@ public class PCREParser extends Parser {
 				setState(1223); 
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,71,_ctx);
-			} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
+			} while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER );
 			}
 		}
 		catch (RecognitionException re) {
@@ -6731,31 +6728,31 @@ public class PCREParser extends Parser {
 	}
 
 	public static class DigitContext extends ParserRuleContext {
-		public TerminalNode D0() { return getToken(PCREParser.D0, 0); }
-		public TerminalNode D1() { return getToken(PCREParser.D1, 0); }
-		public TerminalNode D2() { return getToken(PCREParser.D2, 0); }
-		public TerminalNode D3() { return getToken(PCREParser.D3, 0); }
-		public TerminalNode D4() { return getToken(PCREParser.D4, 0); }
-		public TerminalNode D5() { return getToken(PCREParser.D5, 0); }
-		public TerminalNode D6() { return getToken(PCREParser.D6, 0); }
-		public TerminalNode D7() { return getToken(PCREParser.D7, 0); }
-		public TerminalNode D8() { return getToken(PCREParser.D8, 0); }
-		public TerminalNode D9() { return getToken(PCREParser.D9, 0); }
+		public TerminalNode D0() { return getToken(REGEXParser.D0, 0); }
+		public TerminalNode D1() { return getToken(REGEXParser.D1, 0); }
+		public TerminalNode D2() { return getToken(REGEXParser.D2, 0); }
+		public TerminalNode D3() { return getToken(REGEXParser.D3, 0); }
+		public TerminalNode D4() { return getToken(REGEXParser.D4, 0); }
+		public TerminalNode D5() { return getToken(REGEXParser.D5, 0); }
+		public TerminalNode D6() { return getToken(REGEXParser.D6, 0); }
+		public TerminalNode D7() { return getToken(REGEXParser.D7, 0); }
+		public TerminalNode D8() { return getToken(REGEXParser.D8, 0); }
+		public TerminalNode D9() { return getToken(REGEXParser.D9, 0); }
 		public DigitContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_digit; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterDigit(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterDigit(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitDigit(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitDigit(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitDigit(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitDigit(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6800,15 +6797,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_name; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterName(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterName(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitName(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitName(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitName(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitName(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6841,9 +6838,9 @@ public class PCREParser extends Parser {
 		public LetterContext letter(int i) {
 			return getRuleContext(LetterContext.class,i);
 		}
-		public List<TerminalNode> Underscore() { return getTokens(PCREParser.Underscore); }
+		public List<TerminalNode> Underscore() { return getTokens(REGEXParser.Underscore); }
 		public TerminalNode Underscore(int i) {
-			return getToken(PCREParser.Underscore, i);
+			return getToken(REGEXParser.Underscore, i);
 		}
 		public List<DigitContext> digit() {
 			return getRuleContexts(DigitContext.class);
@@ -6857,15 +6854,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_alpha_nums; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterAlpha_nums(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterAlpha_nums(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitAlpha_nums(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitAlpha_nums(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitAlpha_nums(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitAlpha_nums(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -7066,15 +7063,15 @@ public class PCREParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_non_close_parens; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterNon_close_parens(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterNon_close_parens(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitNon_close_parens(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitNon_close_parens(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitNon_close_parens(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitNon_close_parens(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -7114,22 +7111,22 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Non_close_parenContext extends ParserRuleContext {
-		public TerminalNode CloseParen() { return getToken(PCREParser.CloseParen, 0); }
+		public TerminalNode CloseParen() { return getToken(REGEXParser.CloseParen, 0); }
 		public Non_close_parenContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_non_close_paren; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterNon_close_paren(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterNon_close_paren(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitNon_close_paren(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitNon_close_paren(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitNon_close_paren(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitNon_close_paren(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -7165,73 +7162,73 @@ public class PCREParser extends Parser {
 	}
 
 	public static class LetterContext extends ParserRuleContext {
-		public TerminalNode ALC() { return getToken(PCREParser.ALC, 0); }
-		public TerminalNode BLC() { return getToken(PCREParser.BLC, 0); }
-		public TerminalNode CLC() { return getToken(PCREParser.CLC, 0); }
-		public TerminalNode DLC() { return getToken(PCREParser.DLC, 0); }
-		public TerminalNode ELC() { return getToken(PCREParser.ELC, 0); }
-		public TerminalNode FLC() { return getToken(PCREParser.FLC, 0); }
-		public TerminalNode GLC() { return getToken(PCREParser.GLC, 0); }
-		public TerminalNode HLC() { return getToken(PCREParser.HLC, 0); }
-		public TerminalNode ILC() { return getToken(PCREParser.ILC, 0); }
-		public TerminalNode JLC() { return getToken(PCREParser.JLC, 0); }
-		public TerminalNode KLC() { return getToken(PCREParser.KLC, 0); }
-		public TerminalNode LLC() { return getToken(PCREParser.LLC, 0); }
-		public TerminalNode MLC() { return getToken(PCREParser.MLC, 0); }
-		public TerminalNode NLC() { return getToken(PCREParser.NLC, 0); }
-		public TerminalNode OLC() { return getToken(PCREParser.OLC, 0); }
-		public TerminalNode PLC() { return getToken(PCREParser.PLC, 0); }
-		public TerminalNode QLC() { return getToken(PCREParser.QLC, 0); }
-		public TerminalNode RLC() { return getToken(PCREParser.RLC, 0); }
-		public TerminalNode SLC() { return getToken(PCREParser.SLC, 0); }
-		public TerminalNode TLC() { return getToken(PCREParser.TLC, 0); }
-		public TerminalNode ULC() { return getToken(PCREParser.ULC, 0); }
-		public TerminalNode VLC() { return getToken(PCREParser.VLC, 0); }
-		public TerminalNode WLC() { return getToken(PCREParser.WLC, 0); }
-		public TerminalNode XLC() { return getToken(PCREParser.XLC, 0); }
-		public TerminalNode YLC() { return getToken(PCREParser.YLC, 0); }
-		public TerminalNode ZLC() { return getToken(PCREParser.ZLC, 0); }
-		public TerminalNode AUC() { return getToken(PCREParser.AUC, 0); }
-		public TerminalNode BUC() { return getToken(PCREParser.BUC, 0); }
-		public TerminalNode CUC() { return getToken(PCREParser.CUC, 0); }
-		public TerminalNode DUC() { return getToken(PCREParser.DUC, 0); }
-		public TerminalNode EUC() { return getToken(PCREParser.EUC, 0); }
-		public TerminalNode FUC() { return getToken(PCREParser.FUC, 0); }
-		public TerminalNode GUC() { return getToken(PCREParser.GUC, 0); }
-		public TerminalNode HUC() { return getToken(PCREParser.HUC, 0); }
-		public TerminalNode IUC() { return getToken(PCREParser.IUC, 0); }
-		public TerminalNode JUC() { return getToken(PCREParser.JUC, 0); }
-		public TerminalNode KUC() { return getToken(PCREParser.KUC, 0); }
-		public TerminalNode LUC() { return getToken(PCREParser.LUC, 0); }
-		public TerminalNode MUC() { return getToken(PCREParser.MUC, 0); }
-		public TerminalNode NUC() { return getToken(PCREParser.NUC, 0); }
-		public TerminalNode OUC() { return getToken(PCREParser.OUC, 0); }
-		public TerminalNode PUC() { return getToken(PCREParser.PUC, 0); }
-		public TerminalNode QUC() { return getToken(PCREParser.QUC, 0); }
-		public TerminalNode RUC() { return getToken(PCREParser.RUC, 0); }
-		public TerminalNode SUC() { return getToken(PCREParser.SUC, 0); }
-		public TerminalNode TUC() { return getToken(PCREParser.TUC, 0); }
-		public TerminalNode UUC() { return getToken(PCREParser.UUC, 0); }
-		public TerminalNode VUC() { return getToken(PCREParser.VUC, 0); }
-		public TerminalNode WUC() { return getToken(PCREParser.WUC, 0); }
-		public TerminalNode XUC() { return getToken(PCREParser.XUC, 0); }
-		public TerminalNode YUC() { return getToken(PCREParser.YUC, 0); }
-		public TerminalNode ZUC() { return getToken(PCREParser.ZUC, 0); }
+		public TerminalNode ALC() { return getToken(REGEXParser.ALC, 0); }
+		public TerminalNode BLC() { return getToken(REGEXParser.BLC, 0); }
+		public TerminalNode CLC() { return getToken(REGEXParser.CLC, 0); }
+		public TerminalNode DLC() { return getToken(REGEXParser.DLC, 0); }
+		public TerminalNode ELC() { return getToken(REGEXParser.ELC, 0); }
+		public TerminalNode FLC() { return getToken(REGEXParser.FLC, 0); }
+		public TerminalNode GLC() { return getToken(REGEXParser.GLC, 0); }
+		public TerminalNode HLC() { return getToken(REGEXParser.HLC, 0); }
+		public TerminalNode ILC() { return getToken(REGEXParser.ILC, 0); }
+		public TerminalNode JLC() { return getToken(REGEXParser.JLC, 0); }
+		public TerminalNode KLC() { return getToken(REGEXParser.KLC, 0); }
+		public TerminalNode LLC() { return getToken(REGEXParser.LLC, 0); }
+		public TerminalNode MLC() { return getToken(REGEXParser.MLC, 0); }
+		public TerminalNode NLC() { return getToken(REGEXParser.NLC, 0); }
+		public TerminalNode OLC() { return getToken(REGEXParser.OLC, 0); }
+		public TerminalNode PLC() { return getToken(REGEXParser.PLC, 0); }
+		public TerminalNode QLC() { return getToken(REGEXParser.QLC, 0); }
+		public TerminalNode RLC() { return getToken(REGEXParser.RLC, 0); }
+		public TerminalNode SLC() { return getToken(REGEXParser.SLC, 0); }
+		public TerminalNode TLC() { return getToken(REGEXParser.TLC, 0); }
+		public TerminalNode ULC() { return getToken(REGEXParser.ULC, 0); }
+		public TerminalNode VLC() { return getToken(REGEXParser.VLC, 0); }
+		public TerminalNode WLC() { return getToken(REGEXParser.WLC, 0); }
+		public TerminalNode XLC() { return getToken(REGEXParser.XLC, 0); }
+		public TerminalNode YLC() { return getToken(REGEXParser.YLC, 0); }
+		public TerminalNode ZLC() { return getToken(REGEXParser.ZLC, 0); }
+		public TerminalNode AUC() { return getToken(REGEXParser.AUC, 0); }
+		public TerminalNode BUC() { return getToken(REGEXParser.BUC, 0); }
+		public TerminalNode CUC() { return getToken(REGEXParser.CUC, 0); }
+		public TerminalNode DUC() { return getToken(REGEXParser.DUC, 0); }
+		public TerminalNode EUC() { return getToken(REGEXParser.EUC, 0); }
+		public TerminalNode FUC() { return getToken(REGEXParser.FUC, 0); }
+		public TerminalNode GUC() { return getToken(REGEXParser.GUC, 0); }
+		public TerminalNode HUC() { return getToken(REGEXParser.HUC, 0); }
+		public TerminalNode IUC() { return getToken(REGEXParser.IUC, 0); }
+		public TerminalNode JUC() { return getToken(REGEXParser.JUC, 0); }
+		public TerminalNode KUC() { return getToken(REGEXParser.KUC, 0); }
+		public TerminalNode LUC() { return getToken(REGEXParser.LUC, 0); }
+		public TerminalNode MUC() { return getToken(REGEXParser.MUC, 0); }
+		public TerminalNode NUC() { return getToken(REGEXParser.NUC, 0); }
+		public TerminalNode OUC() { return getToken(REGEXParser.OUC, 0); }
+		public TerminalNode PUC() { return getToken(REGEXParser.PUC, 0); }
+		public TerminalNode QUC() { return getToken(REGEXParser.QUC, 0); }
+		public TerminalNode RUC() { return getToken(REGEXParser.RUC, 0); }
+		public TerminalNode SUC() { return getToken(REGEXParser.SUC, 0); }
+		public TerminalNode TUC() { return getToken(REGEXParser.TUC, 0); }
+		public TerminalNode UUC() { return getToken(REGEXParser.UUC, 0); }
+		public TerminalNode VUC() { return getToken(REGEXParser.VUC, 0); }
+		public TerminalNode WUC() { return getToken(REGEXParser.WUC, 0); }
+		public TerminalNode XUC() { return getToken(REGEXParser.XUC, 0); }
+		public TerminalNode YUC() { return getToken(REGEXParser.YUC, 0); }
+		public TerminalNode ZUC() { return getToken(REGEXParser.ZUC, 0); }
 		public LetterContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_letter; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterLetter(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterLetter(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitLetter(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitLetter(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitLetter(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitLetter(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -7267,23 +7264,23 @@ public class PCREParser extends Parser {
 	}
 
 	public static class Block_quotedContext extends ParserRuleContext {
-		public TerminalNode BackSlashq() { return getToken(PCREParser.BackSlashq, 0); }
-		public TerminalNode BackSlashe() { return getToken(PCREParser.BackSlashe, 0); }
+		public TerminalNode BackSlashq() { return getToken(REGEXParser.BackSlashq, 0); }
+		public TerminalNode BackSlashe() { return getToken(REGEXParser.BackSlashe, 0); }
 		public Block_quotedContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_block_quoted; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).enterBlock_quoted(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).enterBlock_quoted(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PCREListener ) ((PCREListener)listener).exitBlock_quoted(this);
+			if ( listener instanceof REGEXListener ) ((REGEXListener)listener).exitBlock_quoted(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof PCREVisitor ) return ((PCREVisitor<? extends T>)visitor).visitBlock_quoted(this);
+			if ( visitor instanceof REGEXVisitor ) return ((REGEXVisitor<? extends T>)visitor).visitBlock_quoted(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -7300,7 +7297,7 @@ public class PCREParser extends Parser {
 			setState(1254);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,76,_ctx);
-			while ( _alt!=1 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=1 && _alt!= ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1+1 ) {
 					{
 					{
