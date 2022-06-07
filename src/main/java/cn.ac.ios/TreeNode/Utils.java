@@ -12,6 +12,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.logging.Logger;
 
 
@@ -20,14 +21,23 @@ public class Utils {
     public static HashMap<String, String> errorMap = new HashMap<>();
 
     public static void main(String[] args) throws IOException {
+
+        generateData("perl");
+//        generateData("js");
+        generateData("php");
+        generateData("csharp");
+        generateData("python");
+        generateData("java");
+
+
 //        String regex = "/\\w+?b{2,3}[[0-9]&&\\d0-9&&\\w1-3](a++)\\1/()";
 //        single();
-        extractedSize("data/java/java.clear.multiline.json", "java.txt", "data/java/");
-        extractedSize("data/csharp/csharp.clear.multiline.json", "csharp.txt", "data/csharp/");
-        extractedSize("data/perl/perl.clear.multiline.json", "perl.txt", "data/perl/");
-        extractedSize("data/php/php.clear.multiline.flag.json", "php.txt", "data/php/");
-        extractedSize("data/python/python.clear.multiline.json", "python.txt", "data/python/");
-
+//        extractedSize("data/java/java.clear.multiline.json", "java.txt", "data/java/");
+//        extractedSize("data/csharp/csharp.clear.multiline.json", "csharp.txt", "data/csharp/");
+//        extractedSize("data/perl/perl.clear.multiline.json", "perl.txt", "data/perl/");
+//        extractedSize("data/php/php.clear.multiline.flag.json", "php.txt", "data/php/");
+//        extractedSize("data/python/python.clear.multiline.json", "python.txt", "data/python/");
+//
 
 //        ArrayList<BaseDataBean> dataBeanArrayList = new Gson().fromJson(FileUtils.readFileToString(new File("data/java/java.clear.multiline.unique.json"), "utf-8"), new TypeToken<ArrayList<BaseDataBean>>() {
 //        }.getType());
@@ -55,6 +65,32 @@ public class Utils {
 //        }
 //        FileUtils.writeLines(new File("/Users/pqc/Desktop/java/" + index + ".txt"), subdata);
 
+    }
+
+    private static void generateData(String language) throws IOException {
+        String file = "data/"+language+"/"+language+".clear.multiline.json";
+        if(language == "php"){
+            file = file.replace(".json",".flag.json");
+        }
+        ArrayList<BaseDataBean> dataBeanArrayList = new Gson().fromJson(FileUtils.readFileToString(new File(file), "utf-8"), new TypeToken<ArrayList<BaseDataBean>>() {
+        }.getType());
+        ArrayList<String> data1 = new ArrayList<>();
+        ArrayList<String> data2 = new ArrayList<>();
+        HashSet<String> data3 = new HashSet<>();
+        for (BaseDataBean baseDataBean : dataBeanArrayList) {
+            for (Regexps regexps : baseDataBean.getRegexps()) {
+                String pattern = regexps.getPattern();
+                if (pattern.length() <= 100) {
+                    data1.add(pattern);
+                }
+                data2.add(pattern);
+                data3.add(pattern);
+
+            }
+        }
+        FileUtils.writeLines(new File("source_data/" + language + ".source.100.txt"), data1);
+        FileUtils.writeLines(new File("source_data/" + language + ".source.txt"), data2);
+        FileUtils.writeLines(new File("source_data/" + language + ".source.unique.txt"), data3);
     }
 
     private static void extracted(String input, String output, String path) throws IOException {
